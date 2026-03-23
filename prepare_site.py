@@ -38,7 +38,7 @@ except ImportError:
 # ---------------------------------------------------------------------------
 
 CSV_PATH = Path("output/referendum_results.csv")
-SITE_DATA_DIR = Path("site/data")
+SITE_DATA_DIR = Path("docs/data")
 SIMPLIFY_TOLERANCE = 0.002  # ~200m, good balance of detail vs file size
 COORD_PRECISION = 4  # decimal places (~11m accuracy)
 
