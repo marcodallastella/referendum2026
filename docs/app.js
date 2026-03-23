@@ -2,12 +2,14 @@
 // Referendum 2026 — Main Application
 // ---------------------------------------------------------------------------
 
-let map, geojsonLayer, regionLayer, cityLabelsLayer;
+let map;
 let nationalData = null;
 let regionsData = null;
 let currentMode = 'risultati'; // 'affluenza' or 'risultati'
 let sortCol = null;
 let sortAsc = true;
+let hoveredFeatureId = null;
+let currentPopup = null;
 
 // ---------------------------------------------------------------------------
 // Color scales
@@ -28,21 +30,45 @@ const RISULTATI_COLORS = [
     '#c8e6c9', '#66bb6a', '#2e7d32', '#1b5e20'
 ];
 
-function getColor(value, breaks, colors) {
-    if (value == null || isNaN(value)) return '#ccc';
-    for (let i = breaks.length - 1; i >= 0; i--) {
-        if (value >= breaks[i]) return colors[i];
-    }
-    return colors[0];
+// MapLibre step expressions for fill-color
+function affluenzaFillExpression() {
+    return [
+        'step',
+        ['coalesce', ['get', 'affluenza_perc'], 0],
+        AFFLUENZA_COLORS[0],
+        10, AFFLUENZA_COLORS[1],
+        20, AFFLUENZA_COLORS[2],
+        30, AFFLUENZA_COLORS[3],
+        40, AFFLUENZA_COLORS[4],
+        50, AFFLUENZA_COLORS[5],
+        60, AFFLUENZA_COLORS[6],
+        70, AFFLUENZA_COLORS[7],
+        80, AFFLUENZA_COLORS[8]
+    ];
 }
 
-function getAffluenzaColor(perc) {
-    return getColor(perc, AFFLUENZA_BREAKS, AFFLUENZA_COLORS);
-}
-
-function getRisultatiColor(percSi) {
-    if (percSi == null) return '#d0d0d0';
-    return getColor(percSi, RISULTATI_BREAKS, RISULTATI_COLORS);
+function risultatiFillExpression() {
+    return [
+        'case',
+        ['any',
+            ['!', ['has', 'perc_si']],
+            ['==', ['get', 'perc_si'], null]
+        ],
+        '#d0d0d0',
+        [
+            'step',
+            ['get', 'perc_si'],
+            RISULTATI_COLORS[0],
+            20, RISULTATI_COLORS[1],
+            35, RISULTATI_COLORS[2],
+            45, RISULTATI_COLORS[3],
+            50, RISULTATI_COLORS[4],
+            55, RISULTATI_COLORS[5],
+            65, RISULTATI_COLORS[6],
+            80, RISULTATI_COLORS[7],
+            100, RISULTATI_COLORS[8]
+        ]
+    ];
 }
 
 // ---------------------------------------------------------------------------
@@ -146,9 +172,7 @@ function setMode(mode) {
     document.getElementById('summary-affluenza').style.display = mode === 'affluenza' ? '' : 'none';
     document.getElementById('summary-risultati').style.display = mode === 'risultati' ? '' : 'none';
 
-    if (geojsonLayer) {
-        geojsonLayer.setStyle(styleFeature);
-    }
+    updateChoroplethColors();
     updateLegend();
     buildRegionsTable();
 }
@@ -156,190 +180,179 @@ function setMode(mode) {
 window.setMode = setMode;
 
 // ---------------------------------------------------------------------------
-// City labels (20 capoluoghi di regione)
-// ---------------------------------------------------------------------------
-
-const CITY_COORDS = [
-    { name: 'Roma', lat: 41.9028, lng: 12.4964 },
-    { name: 'Milano', lat: 45.4642, lng: 9.1900 },
-    { name: 'Napoli', lat: 40.8518, lng: 14.2681 },
-    { name: 'Torino', lat: 45.0703, lng: 7.6869 },
-    { name: 'Palermo', lat: 38.1157, lng: 13.3615 },
-    { name: 'Genova', lat: 44.4056, lng: 8.9463 },
-    { name: 'Bologna', lat: 44.4949, lng: 11.3426 },
-    { name: 'Firenze', lat: 43.7696, lng: 11.2558 },
-    { name: 'Bari', lat: 41.1171, lng: 16.8719 },
-    { name: 'Catania', lat: 37.5079, lng: 15.0830 },
-    { name: 'Venezia', lat: 45.4408, lng: 12.3155 },
-    { name: 'Verona', lat: 45.4384, lng: 10.9916 },
-    { name: 'Messina', lat: 38.1938, lng: 15.5540 },
-    { name: 'Padova', lat: 45.4064, lng: 11.8768 },
-    { name: 'Trieste', lat: 45.6495, lng: 13.7768 },
-    { name: 'Brescia', lat: 45.5416, lng: 10.2118 },
-    { name: 'Cagliari', lat: 39.2238, lng: 9.1217 },
-    { name: 'Perugia', lat: 43.1107, lng: 12.3908 },
-    { name: 'Reggio Calabria', lat: 38.1114, lng: 15.6473 },
-    { name: "L\u2019Aquila", lat: 42.3498, lng: 13.3995 },
-];
-
-function createCityLabels() {
-    cityLabelsLayer = L.layerGroup();
-
-    CITY_COORDS.forEach(function(city) {
-        // Small dot at exact coordinate
-        var dot = L.circleMarker([city.lat, city.lng], {
-            radius: 2,
-            fillColor: '#1a1a1a',
-            fillOpacity: 0.7,
-            color: '#fff',
-            weight: 1,
-            interactive: false,
-        });
-        cityLabelsLayer.addLayer(dot);
-
-        // Text label offset to the right/above
-        var label = L.marker([city.lat, city.lng], {
-            interactive: false,
-            icon: L.divIcon({
-                className: 'city-label',
-                html: '<span>' + city.name + '</span>',
-                iconSize: null,
-                iconAnchor: [-5, 12],
-            }),
-        });
-        cityLabelsLayer.addLayer(label);
-    });
-
-    return cityLabelsLayer;
-}
-
-// ---------------------------------------------------------------------------
 // Map
 // ---------------------------------------------------------------------------
 
-function initMap() {
-    map = L.map('map', {
-        center: [42.0, 12.5],
-        zoom: 6,
-        minZoom: 5,
-        maxZoom: 12,
-        zoomSnap: 0.5,
-        zoomDelta: 0.5,
-    });
-
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>',
-        subdomains: 'abcd',
-        maxZoom: 19,
-    }).addTo(map);
+function updateChoroplethColors() {
+    if (!map || !map.getLayer('choropleth-fill')) return;
+    var expr = currentMode === 'affluenza'
+        ? affluenzaFillExpression()
+        : risultatiFillExpression();
+    map.setPaintProperty('choropleth-fill', 'fill-color', expr);
 }
 
-function styleFeature(feature) {
-    const p = feature.properties;
-    let fillColor;
+function buildPopupHTML(p) {
+    let html = '<div class="popup-title">' + (p.comune || '') + '</div>';
+    html += '<div class="popup-subtitle">' + (p.provincia || '') + ' \u2014 ' + (p.regione || '') + '</div>';
 
-    if (currentMode === 'affluenza') {
-        fillColor = getAffluenzaColor(p.affluenza_perc || 0);
-    } else {
-        fillColor = getRisultatiColor(p.perc_si);
+    if (p.elettori) {
+        html += '<div class="popup-row"><span>Elettori</span><span class="popup-val">' + fmtNum(p.elettori) + '</span></div>';
     }
 
-    return {
-        fillColor: fillColor,
-        weight: 0.3,
-        opacity: 0.6,
-        color: '#333',
-        fillOpacity: 0.85,
-    };
-}
-
-function onEachFeature(feature, layer) {
-    layer.on({
-        mouseover: function(e) {
-            e.target.setStyle({ weight: 2, color: '#000', fillOpacity: 0.95 });
-            e.target.bringToFront();
-        },
-        mouseout: function(e) {
-            geojsonLayer.resetStyle(e.target);
-            if (regionLayer) regionLayer.bringToFront();
-        },
-        click: function(e) {
-            const p = feature.properties;
-            let html = `<div class="popup-title">${p.comune}</div>`;
-            html += `<div class="popup-subtitle">${p.provincia || ''} \u2014 ${p.regione || ''}</div>`;
-
-            if (p.elettori) {
-                html += `<div class="popup-row"><span>Elettori</span><span class="popup-val">${fmtNum(p.elettori)}</span></div>`;
-            }
-
-            html += `<div class="popup-section"><div class="popup-section-title">Affluenza</div>`;
-            const labels = ['12:00', '19:00', '23:00', 'Finale'];
-            for (let i = 1; i <= 4; i++) {
-                const perc = p['com' + i + '_perc'];
-                const vot = p['com' + i + '_vot'];
-                if (vot > 0) {
-                    html += `<div class="popup-row"><span>${labels[i-1]}</span><span class="popup-val">${fmtPerc(perc)} (${fmtNum(vot)})</span></div>`;
-                }
-            }
-            html += '</div>';
-
-            if (p.perc_si != null) {
-                html += `<div class="popup-section"><div class="popup-section-title">Risultati</div>`;
-                html += `<div class="popup-row"><span>S\u00ec</span><span class="popup-val" style="color:var(--color-si)">${fmtPerc(p.perc_si)} (${fmtNum(p.si)})</span></div>`;
-                html += `<div class="popup-row"><span>No</span><span class="popup-val" style="color:var(--color-no)">${fmtPerc(p.perc_no)} (${fmtNum(p.no)})</span></div>`;
-                if (p.bianche != null) {
-                    html += `<div class="popup-row"><span>Sch. bianche</span><span class="popup-val">${fmtNum(p.bianche)}</span></div>`;
-                }
-                if (p.nulle != null) {
-                    html += `<div class="popup-row"><span>Sch. nulle</span><span class="popup-val">${fmtNum(p.nulle)}</span></div>`;
-                }
-                html += '</div>';
-            }
-
-            layer.bindPopup(html, { maxWidth: 280 }).openPopup();
+    html += '<div class="popup-section"><div class="popup-section-title">Affluenza</div>';
+    var labels = ['12:00', '19:00', '23:00', 'Finale'];
+    for (var i = 1; i <= 4; i++) {
+        var perc = p['com' + i + '_perc'];
+        var vot = p['com' + i + '_vot'];
+        if (vot > 0) {
+            html += '<div class="popup-row"><span>' + labels[i - 1] + '</span><span class="popup-val">' + fmtPerc(perc) + ' (' + fmtNum(vot) + ')</span></div>';
         }
-    });
+    }
+    html += '</div>';
+
+    if (p.perc_si != null && p.perc_si !== undefined) {
+        html += '<div class="popup-section"><div class="popup-section-title">Risultati</div>';
+        html += '<div class="popup-row"><span>S\u00ec</span><span class="popup-val" style="color:var(--color-si)">' + fmtPerc(p.perc_si) + ' (' + fmtNum(p.si) + ')</span></div>';
+        html += '<div class="popup-row"><span>No</span><span class="popup-val" style="color:var(--color-no)">' + fmtPerc(p.perc_no) + ' (' + fmtNum(p.no) + ')</span></div>';
+        if (p.bianche != null && p.bianche !== undefined) {
+            html += '<div class="popup-row"><span>Sch. bianche</span><span class="popup-val">' + fmtNum(p.bianche) + '</span></div>';
+        }
+        if (p.nulle != null && p.nulle !== undefined) {
+            html += '<div class="popup-row"><span>Sch. nulle</span><span class="popup-val">' + fmtNum(p.nulle) + '</span></div>';
+        }
+        html += '</div>';
+    }
+
+    return html;
 }
 
 async function loadMap() {
-    initMap();
+    map = new maplibregl.Map({
+        container: 'map',
+        style: 'https://api.maptiler.com/maps/streets-v2/style.json?key=YOUR_MAPTILER_KEY',
+        center: [12.5, 42.5],
+        zoom: 5.5,
+        minZoom: 5,
+        maxZoom: 12,
+    });
 
-    try {
-        const resp = await fetch('data/italy.geojson');
-        const geojson = await resp.json();
+    map.addControl(new maplibregl.NavigationControl(), 'top-right');
 
-        // Layer 1: Municipality choropleth (interactive)
-        geojsonLayer = L.geoJSON(geojson, {
-            style: styleFeature,
-            onEachFeature: onEachFeature,
-        }).addTo(map);
-
-        // Layer 2: Region outlines (non-interactive, on top of choropleth)
+    map.on('load', async function () {
         try {
-            const regResp = await fetch('data/regions.geojson');
-            const regGeojson = await regResp.json();
-            regionLayer = L.geoJSON(regGeojson, {
-                interactive: false,
-                style: {
-                    color: '#333',
-                    weight: 1.5,
-                    opacity: 0.6,
-                    fill: false,
+            // Find the first symbol (label) layer in the basemap style
+            var layers = map.getStyle().layers;
+            var firstLabelLayer;
+            for (var i = 0; i < layers.length; i++) {
+                var layer = layers[i];
+                if (layer.type === 'symbol' && layer.layout && layer.layout['text-field']) {
+                    firstLabelLayer = layer.id;
+                    break;
+                }
+            }
+
+            // Load GeoJSON
+            var resp = await fetch('data/italy.geojson');
+            var geojson = await resp.json();
+
+            // Add source with generateId for hover state management
+            map.addSource('municipalities', {
+                type: 'geojson',
+                data: geojson,
+                generateId: true,
+            });
+
+            // Choropleth fill layer — inserted below basemap labels
+            var fillExpr = currentMode === 'affluenza'
+                ? affluenzaFillExpression()
+                : risultatiFillExpression();
+
+            map.addLayer({
+                id: 'choropleth-fill',
+                type: 'fill',
+                source: 'municipalities',
+                paint: {
+                    'fill-color': fillExpr,
+                    'fill-opacity': [
+                        'case',
+                        ['boolean', ['feature-state', 'hover'], false],
+                        0.95,
+                        0.85
+                    ],
                 },
-            }).addTo(map);
+            }, firstLabelLayer);
+
+            // Choropleth outline layer — also below basemap labels
+            map.addLayer({
+                id: 'choropleth-outline',
+                type: 'line',
+                source: 'municipalities',
+                paint: {
+                    'line-color': [
+                        'case',
+                        ['boolean', ['feature-state', 'hover'], false],
+                        '#000',
+                        '#333'
+                    ],
+                    'line-width': [
+                        'case',
+                        ['boolean', ['feature-state', 'hover'], false],
+                        2,
+                        0.3
+                    ],
+                    'line-opacity': 0.6,
+                },
+            }, firstLabelLayer);
+
+            // Hover interaction
+            map.on('mousemove', 'choropleth-fill', function (e) {
+                if (e.features.length > 0) {
+                    if (hoveredFeatureId !== null) {
+                        map.setFeatureState(
+                            { source: 'municipalities', id: hoveredFeatureId },
+                            { hover: false }
+                        );
+                    }
+                    hoveredFeatureId = e.features[0].id;
+                    map.setFeatureState(
+                        { source: 'municipalities', id: hoveredFeatureId },
+                        { hover: true }
+                    );
+                    map.getCanvas().style.cursor = 'pointer';
+                }
+            });
+
+            map.on('mouseleave', 'choropleth-fill', function () {
+                if (hoveredFeatureId !== null) {
+                    map.setFeatureState(
+                        { source: 'municipalities', id: hoveredFeatureId },
+                        { hover: false }
+                    );
+                }
+                hoveredFeatureId = null;
+                map.getCanvas().style.cursor = '';
+            });
+
+            // Click popup
+            map.on('click', 'choropleth-fill', function (e) {
+                if (!e.features.length) return;
+                var p = e.features[0].properties;
+                var html = buildPopupHTML(p);
+
+                if (currentPopup) currentPopup.remove();
+                currentPopup = new maplibregl.Popup({ maxWidth: '280px' })
+                    .setLngLat(e.lngLat)
+                    .setHTML(html)
+                    .addTo(map);
+            });
+
+            updateLegend();
         } catch (e) {
-            console.warn('Region boundaries not available:', e);
+            console.error('Failed to load GeoJSON:', e);
+            document.getElementById('map').innerHTML =
+                '<p style="padding:3rem;color:#666;">GeoJSON non disponibile.</p>';
         }
-
-        // Layer 3: City labels (non-interactive, topmost)
-        createCityLabels().addTo(map);
-
-        updateLegend();
-    } catch (e) {
-        console.error('Failed to load GeoJSON:', e);
-        document.getElementById('map').innerHTML =
-            '<p style="padding:3rem;color:#666;">GeoJSON non disponibile.</p>';
-    }
+    });
 }
 
 // ---------------------------------------------------------------------------
