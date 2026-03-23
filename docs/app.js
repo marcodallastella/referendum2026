@@ -2,7 +2,7 @@
 // Referendum 2026 — Main Application
 // ---------------------------------------------------------------------------
 
-let map, geojsonLayer;
+let map, geojsonLayer, regionLayer, cityLabelsLayer;
 let nationalData = null;
 let regionsData = null;
 let currentMode = 'risultati'; // 'affluenza' or 'risultati'
@@ -156,6 +156,64 @@ function setMode(mode) {
 window.setMode = setMode;
 
 // ---------------------------------------------------------------------------
+// City labels (20 capoluoghi di regione)
+// ---------------------------------------------------------------------------
+
+const CITY_COORDS = [
+    { name: 'Roma', lat: 41.9028, lng: 12.4964 },
+    { name: 'Milano', lat: 45.4642, lng: 9.1900 },
+    { name: 'Napoli', lat: 40.8518, lng: 14.2681 },
+    { name: 'Torino', lat: 45.0703, lng: 7.6869 },
+    { name: 'Palermo', lat: 38.1157, lng: 13.3615 },
+    { name: 'Genova', lat: 44.4056, lng: 8.9463 },
+    { name: 'Bologna', lat: 44.4949, lng: 11.3426 },
+    { name: 'Firenze', lat: 43.7696, lng: 11.2558 },
+    { name: 'Bari', lat: 41.1171, lng: 16.8719 },
+    { name: 'Catania', lat: 37.5079, lng: 15.0830 },
+    { name: 'Venezia', lat: 45.4408, lng: 12.3155 },
+    { name: 'Verona', lat: 45.4384, lng: 10.9916 },
+    { name: 'Messina', lat: 38.1938, lng: 15.5540 },
+    { name: 'Padova', lat: 45.4064, lng: 11.8768 },
+    { name: 'Trieste', lat: 45.6495, lng: 13.7768 },
+    { name: 'Brescia', lat: 45.5416, lng: 10.2118 },
+    { name: 'Cagliari', lat: 39.2238, lng: 9.1217 },
+    { name: 'Perugia', lat: 43.1107, lng: 12.3908 },
+    { name: 'Reggio Calabria', lat: 38.1114, lng: 15.6473 },
+    { name: "L\u2019Aquila", lat: 42.3498, lng: 13.3995 },
+];
+
+function createCityLabels() {
+    cityLabelsLayer = L.layerGroup();
+
+    CITY_COORDS.forEach(function(city) {
+        // Small dot at exact coordinate
+        var dot = L.circleMarker([city.lat, city.lng], {
+            radius: 2,
+            fillColor: '#1a1a1a',
+            fillOpacity: 0.7,
+            color: '#fff',
+            weight: 1,
+            interactive: false,
+        });
+        cityLabelsLayer.addLayer(dot);
+
+        // Text label offset to the right/above
+        var label = L.marker([city.lat, city.lng], {
+            interactive: false,
+            icon: L.divIcon({
+                className: 'city-label',
+                html: '<span>' + city.name + '</span>',
+                iconSize: null,
+                iconAnchor: [-5, 12],
+            }),
+        });
+        cityLabelsLayer.addLayer(label);
+    });
+
+    return cityLabelsLayer;
+}
+
+// ---------------------------------------------------------------------------
 // Map
 // ---------------------------------------------------------------------------
 
@@ -203,6 +261,7 @@ function onEachFeature(feature, layer) {
         },
         mouseout: function(e) {
             geojsonLayer.resetStyle(e.target);
+            if (regionLayer) regionLayer.bringToFront();
         },
         click: function(e) {
             const p = feature.properties;
@@ -249,10 +308,31 @@ async function loadMap() {
         const resp = await fetch('data/italy.geojson');
         const geojson = await resp.json();
 
+        // Layer 1: Municipality choropleth (interactive)
         geojsonLayer = L.geoJSON(geojson, {
             style: styleFeature,
             onEachFeature: onEachFeature,
         }).addTo(map);
+
+        // Layer 2: Region outlines (non-interactive, on top of choropleth)
+        try {
+            const regResp = await fetch('data/regions.geojson');
+            const regGeojson = await regResp.json();
+            regionLayer = L.geoJSON(regGeojson, {
+                interactive: false,
+                style: {
+                    color: '#333',
+                    weight: 1.5,
+                    opacity: 0.6,
+                    fill: false,
+                },
+            }).addTo(map);
+        } catch (e) {
+            console.warn('Region boundaries not available:', e);
+        }
+
+        // Layer 3: City labels (non-interactive, topmost)
+        createCityLabels().addTo(map);
 
         updateLegend();
     } catch (e) {

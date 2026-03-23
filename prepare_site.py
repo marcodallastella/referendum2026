@@ -40,6 +40,7 @@ except ImportError:
 CSV_PATH = Path("output/referendum_results.csv")
 SITE_DATA_DIR = Path("docs/data")
 SIMPLIFY_TOLERANCE = 0.002  # ~200m, good balance of detail vs file size
+REGION_SIMPLIFY_TOLERANCE = 0.003  # coarser for region outlines (display only)
 COORD_PRECISION = 4  # decimal places (~11m accuracy)
 
 ISTAT_URLS = [
@@ -562,6 +563,41 @@ def compute_regional_data(df: pd.DataFrame) -> list[dict]:
 
 
 # ---------------------------------------------------------------------------
+# Region boundary generation
+# ---------------------------------------------------------------------------
+
+def generate_region_boundaries(gdf: gpd.GeoDataFrame, output_path: Path):
+    """Dissolve municipality geometries by region and write a simplified GeoJSON."""
+    print("  Dissolving municipalities into region boundaries ...")
+    region_col = "REGIONE"
+    if region_col not in gdf.columns:
+        print("    WARNING: No REGIONE column found, skipping region boundaries.")
+        return
+
+    regions_gdf = gdf.dissolve(by=region_col).reset_index()
+    print(f"  Simplifying {len(regions_gdf)} regions (tolerance={REGION_SIMPLIFY_TOLERANCE}) ...")
+    regions_gdf.geometry = regions_gdf.geometry.simplify(
+        REGION_SIMPLIFY_TOLERANCE, preserve_topology=True
+    )
+
+    # Build minimal GeoJSON with just region name
+    features = []
+    for _, row in regions_gdf.iterrows():
+        geom = row.geometry
+        if geom is None or geom.is_empty:
+            continue
+        feature = {
+            "type": "Feature",
+            "geometry": json.loads(gpd.GeoSeries([geom]).to_json())["features"][0]["geometry"],
+            "properties": {"regione": str(row[region_col])},
+        }
+        features.append(feature)
+
+    geojson = {"type": "FeatureCollection", "features": features}
+    write_json(geojson, output_path, round_floats=True)
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
@@ -579,22 +615,23 @@ def main():
 
     SITE_DATA_DIR.mkdir(parents=True, exist_ok=True)
     geojson_path = SITE_DATA_DIR / "italy.geojson"
+    regions_geojson_path = SITE_DATA_DIR / "regions.geojson"
 
     # --- Step 1: Load election data ---
-    print("\n[1/5] Loading election data ...")
+    print("\n[1/6] Loading election data ...")
     df = load_csv(args.csv)
     print(f"  {len(df)} rows, {len(df.columns)} columns")
 
     # --- Step 2: Prepare map boundaries ---
     if args.skip_boundaries and geojson_path.exists():
-        print("\n[2/5] Skipping boundary download (--skip-boundaries)")
+        print("\n[2/6] Skipping boundary download (--skip-boundaries)")
     else:
         if gpd is None:
             print("\nERROR: geopandas is required for boundary generation. "
                   "Install it with: pip install geopandas", file=sys.stderr)
             print("Use --skip-boundaries if the GeoJSON already exists.", file=sys.stderr)
             sys.exit(1)
-        print("\n[2/5] Preparing map boundaries ...")
+        print("\n[2/6] Preparing map boundaries ...")
         if args.boundaries:
             print(f"  Reading local shapefile: {args.boundaries}")
             gdf = gpd.read_file(args.boundaries, encoding="utf-8")
@@ -608,25 +645,28 @@ def main():
         print("  Matching election data to geometries ...")
         geojson = match_data_to_geojson(gdf, df)
 
-        print("  Writing GeoJSON ...")
+        print("  Writing municipality GeoJSON ...")
         write_json(geojson, geojson_path, round_floats=True)
 
+        print("  Generating region boundaries ...")
+        generate_region_boundaries(gdf, regions_geojson_path)
+
     # --- Step 3: National summary ---
-    print("\n[3/5] Computing national summary ...")
+    print("\n[3/6] Computing national summary ...")
     national = compute_national_summary(df)
     write_json(national, SITE_DATA_DIR / "national.json")
 
     # --- Step 4: Regional data ---
-    print("\n[4/5] Computing regional data ...")
+    print("\n[4/6] Computing regional data ...")
     regions = compute_regional_data(df)
     write_json(regions, SITE_DATA_DIR / "regions.json")
 
     # --- Step 5: Copy raw CSV for download ---
-    print("\n[5/5] Copying raw data for download ...")
+    print("\n[5/6] Copying raw data for download ...")
     shutil.copy2(args.csv, SITE_DATA_DIR / "referendum_results.csv")
     print(f"  Copied {args.csv} → {SITE_DATA_DIR / 'referendum_results.csv'}")
 
-    # Summary
+    # [6/6] Summary
     print("\n--- Done ---")
     print(f"Site data directory: {SITE_DATA_DIR}/")
     for p in sorted(SITE_DATA_DIR.iterdir()):

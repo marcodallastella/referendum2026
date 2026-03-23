@@ -527,6 +527,24 @@ footer {
     font-variant-numeric: tabular-nums;
 }
 
+/* City labels on map ------------------------------------------------------ */
+
+.city-label {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.city-label span {
+    font-family: 'Libre Franklin', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    color: #1a1a1a;
+    text-shadow: 0 0 3px #fff, 0 0 3px #fff;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
 /* Responsive -------------------------------------------------------------- */
 
 @media (max-width: 768px) {
