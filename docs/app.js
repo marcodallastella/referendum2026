@@ -151,9 +151,11 @@ function renderResultsBarHTML(percSi, percNo, size) {
 
 async function loadData() {
     try {
+        // --- CACHE BUSTER: Forces the browser to get the newest files ---
+        const cb = '?t=' + new Date().getTime();
         const [natResp, regResp] = await Promise.all([
-            fetch('data/national.json'),
-            fetch('data/regions.json'),
+            fetch('data/national.json' + cb),
+            fetch('data/regions.json' + cb),
         ]);
         if (!natResp.ok) throw new Error('national.json: HTTP ' + natResp.status);
         if (!regResp.ok) throw new Error('regions.json: HTTP ' + regResp.status);

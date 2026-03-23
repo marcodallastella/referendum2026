@@ -1,9 +1,4 @@
 #!/usr/bin/env python3
-"""
-Prepare site-ready data from scraped referendum results.
-Updated to output EXACTLY the nested JSON structure required by app.js.
-"""
-
 import argparse
 import json
 import sys
@@ -14,15 +9,28 @@ import pandas as pd
 def load_data(csv_path: Path) -> pd.DataFrame:
     df = pd.read_csv(csv_path, low_memory=False)
 
-    # Ensure numerical columns are safe floats/ints
+    # 1. Map scraper columns to expected internal names so data isn't 0
+    mapping = {
+        "scr_voti_si": "yes",
+        "scr_voti_no": "no",
+        "scr_scrut_t": "sections_reported",
+        "scr_scrut_p": "sections_total",
+        "ele_t": "electors",
+        "regione_name": "region",
+        "provincia_name": "province",
+        "comune_name": "comune"
+    }
+    df = df.rename(columns={k: v for k, v in mapping.items() if k in df.columns})
+
+    # 2. Ensure numerical columns are safe floats/ints
     cols_to_check = ["yes", "no", "sections_reported", "sections_total", "electors"]
     for c in cols_to_check:
-        if c in df.columns: 
+        if c in df.columns:
             df[c] = pd.to_numeric(df[c], errors="coerce").fillna(0)
-        else: 
+        else:
             df[c] = 0
 
-    # Fill missing text columns
+    # 3. Fill missing text columns
     for c in ["region", "province", "comune"]:
         if c not in df.columns:
             df[c] = "Sconosciuto"
@@ -34,7 +42,7 @@ def compute_totals(df: pd.DataFrame) -> dict:
     total_yes = int(df["yes"].sum())
     total_no = int(df["no"].sum())
     total_votes = total_yes + total_no
-    
+
     electors = int(df["electors"].sum())
     avg_turnout = float((total_votes / electors * 100) if electors > 0 else 0.0)
 
@@ -46,7 +54,7 @@ def compute_totals(df: pd.DataFrame) -> dict:
         "affluenza": {
             "best_perc": avg_turnout,
             "best_votanti": total_votes,
-            "snapshots": [] # Safely mapped as empty for the progress bar
+            "snapshots": []
         },
         "results": {
             "perc_si": float((total_yes / total_votes * 100) if total_votes else 0.0),
@@ -63,7 +71,7 @@ def group_by_region(df: pd.DataFrame) -> list[dict]:
     grouped = []
     for region_name, g in df.groupby("region"):
         totals = compute_totals(g)
-        totals["regione"] = region_name  # app.js expects "r.regione"
+        totals["regione"] = region_name
         grouped.append(totals)
     return grouped
 
@@ -71,7 +79,6 @@ def build_comuni(df: pd.DataFrame) -> list[dict]:
     comuni_list = []
     for _, row in df.iterrows():
         total_votes = row["yes"] + row["no"]
-        # app.js popup expects specific Italian properties
         comuni_list.append({
             "regione": row["region"],
             "provincia": row["province"],
@@ -81,7 +88,7 @@ def build_comuni(df: pd.DataFrame) -> list[dict]:
             "perc_no": float((row["no"]/total_votes*100) if total_votes > 0 else 0.0),
             "si": int(row["yes"]),
             "no": int(row["no"]),
-            "com4_perc": float((total_votes / row["electors"] * 100) if row["electors"] > 0 else 0.0), 
+            "com4_perc": float((total_votes / row["electors"] * 100) if row["electors"] > 0 else 0.0),
             "com4_vot": int(total_votes)
         })
     return comuni_list
@@ -92,7 +99,7 @@ def main():
     parser.add_argument("--output-dir", default="docs/data")
     parser.add_argument("--skip-boundaries", action="store_true")
     parser.add_argument("--boundaries")
-    
+
     args = parser.parse_args()
 
     csv_path = Path(args.csv)
