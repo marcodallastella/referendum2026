@@ -172,7 +172,7 @@ def write_json(data, path: Path, round_floats=False):
 # Boundary download & processing (reused from original)
 # ---------------------------------------------------------------------------
 
-def download_istat_boundaries() -> gpd.GeoDataFrame:
+def download_istat_boundaries() -> "gpd.GeoDataFrame":
     """Download ISTAT generalised municipality boundaries."""
     for url in ISTAT_URLS:
         try:
@@ -219,7 +219,7 @@ def download_istat_boundaries() -> gpd.GeoDataFrame:
     sys.exit(1)
 
 
-def prepare_boundaries(gdf: gpd.GeoDataFrame) -> gpd.GeoDataFrame:
+def prepare_boundaries(gdf: "gpd.GeoDataFrame") -> "gpd.GeoDataFrame":
     """Simplify geometries and prepare for web use."""
     print(f"  Simplifying ({len(gdf)} features, tolerance={SIMPLIFY_TOLERANCE}) ...")
     gdf = gdf.copy()
@@ -340,7 +340,7 @@ def results_fields(row) -> dict:
 # GeoJSON generation
 # ---------------------------------------------------------------------------
 
-def match_data_to_geojson(gdf: gpd.GeoDataFrame, df: pd.DataFrame) -> dict:
+def match_data_to_geojson(gdf: "gpd.GeoDataFrame", df: pd.DataFrame) -> dict:
     """Build a GeoJSON FeatureCollection with election data embedded in properties."""
 
     # Build lookup: MATCH_KEY → row data
@@ -566,7 +566,7 @@ def compute_regional_data(df: pd.DataFrame) -> list[dict]:
 # Region boundary generation
 # ---------------------------------------------------------------------------
 
-def generate_region_boundaries(gdf: gpd.GeoDataFrame, output_path: Path):
+def generate_region_boundaries(gdf: "gpd.GeoDataFrame", output_path: Path):
     """Dissolve municipality geometries by region and write a simplified GeoJSON."""
     print("  Dissolving municipalities into region boundaries ...")
     region_col = "REGIONE"
