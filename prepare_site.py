@@ -14,40 +14,50 @@ from pathlib import Path
 
 import pandas as pd
 
-
 def load_data(csv_path: Path) -> pd.DataFrame:
-    df = pd.read_csv(csv_path)
+    # low_memory=False prevents the DtypeWarning on import
+    df = pd.read_csv(csv_path, low_memory=False)
 
-    # Merge rows: results and affluence into one
+    # 1. Fix the Italian decimal commas BEFORE grouping
+    # This turns "17,21" into 17.21 so Python stops crashing
+    for col in ["com4_perc", "com3_perc", "com2_perc", "com1_perc"]:
+        if col in df.columns:
+            df[col] = df[col].astype(str).str.replace(',', '.').apply(pd.to_numeric, errors='coerce').fillna(0)
+
+    # 2. Merge rows safely
     if "cm_code" in df.columns:
-        # We use 'max' for numeric columns to ensure we get the latest turnout 
-        # and the latest vote counts in one row.
-        df = df.groupby("cm_code").max().reset_index()
+        # Sort so 'results' (if they exist) override 'affluence', avoiding .max() crashes
+        if "data_type" in df.columns:
+            df = df.sort_values("data_type", ascending=False)
+        df = df.groupby("cm_code").first().reset_index()
 
-    # Expand the mapping to include 'best_perc' (latest turnout)
-    # The scraper uses com3_perc for the final turnout (3rd communication)
+    # 3. Map scraper's technical names to your site's variable names
     mapping = {
-        "regione_name": "region",
-        "provincia_name": "province",
-        "comune_name": "comune",
-        "ele_t": "electors",
-        "scr_scrut_p": "sections_total",
-        "scr_scrut_t": "sections_reported",
-        "scr_voti_si": "yes",
+        "scr_voti_si": "yes", 
         "scr_voti_no": "no",
-        "com3_perc": "best_perc" # <--- THIS IS WHAT APP.JS IS LOOKING FOR
+        "scr_scrut_t": "sections_reported", 
+        "scr_scrut_p": "sections_total",
+        "ele_t": "electors", 
+        "regione_name": "region",
+        "provincia_name": "province", 
+        "comune_name": "comune"
     }
-    
-    df = df.rename(columns={k: v for k, v in mapping.items() if k in df.columns})
-    
-    # If com3_perc isn't available yet, fallback to the last reported turnout
-    if "best_perc" not in df.columns:
-        for c in ["com3_perc", "com2_perc", "com1_perc"]:
-            if c in df.columns:
-                df["best_perc"] = df[c]
-                break
-        if "best_perc" not in df.columns:
-            df["best_perc"] = 0
+    df = df.rename(columns=mapping)
+
+    # 4. Create the 'best_perc' field for app.js using the highest available turnout
+    df["best_perc"] = 0.0
+    for col in ["com4_perc", "com3_perc", "com2_perc", "com1_perc"]:
+        if col in df.columns:
+            df["best_perc"] = df[col]
+            break
+
+    # 5. Ensure final columns are safe numbers
+    cols_to_check = ["yes", "no", "sections_reported", "sections_total", "electors"]
+    for c in cols_to_check:
+        if c in df.columns: 
+            df[c] = pd.to_numeric(df[c], errors="coerce").fillna(0)
+        else: 
+            df[c] = 0
 
     return df
 
