@@ -79,8 +79,8 @@
   },
   {
     "region": "Sicilia",
-    "province": "Agrigento",
-    "comune": "ALESSANDRIA DELLA ROCCA",
+    "province": "Enna",
+    "comune": "AIDONE",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -91,9 +91,9 @@
     "state": "counting"
   },
   {
-    "region": "Trentino-Alto Adige/S\u00fcdtirol",
-    "province": "Bolzano/Bozen",
-    "comune": "AVELENGO/HAFLING",
+    "region": "Toscana",
+    "province": "Grosseto",
+    "comune": "CAPALBIO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -117,9 +117,9 @@
     "state": "counting"
   },
   {
-    "region": "Sicilia",
-    "province": "Agrigento",
-    "comune": "ARAGONA",
+    "region": "Emilia-Romagna",
+    "province": "Ferrara",
+    "comune": "BONDENO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -156,9 +156,9 @@
     "state": "counting"
   },
   {
-    "region": "Veneto",
-    "province": "Belluno",
-    "comune": "ALPAGO",
+    "region": "Toscana",
+    "province": "Firenze",
+    "comune": "BARBERINO TAVARNELLE",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -182,9 +182,9 @@
     "state": "counting"
   },
   {
-    "region": "Sicilia",
-    "province": "Agrigento",
-    "comune": "BIVONA",
+    "region": "Emilia-Romagna",
+    "province": "Ferrara",
+    "comune": "CENTO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -195,9 +195,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "ALGUA",
+    "region": "Liguria",
+    "province": "Imperia",
+    "comune": "AURIGO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -247,9 +247,9 @@
     "state": "counting"
   },
   {
-    "region": "Sicilia",
-    "province": "Agrigento",
-    "comune": "BURGIO",
+    "region": "Emilia-Romagna",
+    "province": "Ferrara",
+    "comune": "CODIGORO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -312,9 +312,9 @@
     "state": "counting"
   },
   {
-    "region": "Sicilia",
-    "province": "Agrigento",
-    "comune": "CALAMONACI",
+    "region": "Emilia-Romagna",
+    "province": "Ferrara",
+    "comune": "COMACCHIO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -338,9 +338,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "ALLUVIONI PIOVERA",
+    "region": "Lombardia",
+    "province": "Brescia",
+    "comune": "AZZANO MELLA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -364,9 +364,9 @@
     "state": "counting"
   },
   {
-    "region": "Sicilia",
-    "province": "Agrigento",
-    "comune": "CALTABELLOTTA",
+    "region": "Emilia-Romagna",
+    "province": "Ferrara",
+    "comune": "COPPARO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -403,9 +403,9 @@
     "state": "counting"
   },
   {
-    "region": "Veneto",
-    "province": "Belluno",
-    "comune": "BORGO VALBELLUNA",
+    "region": "Toscana",
+    "province": "Pisa",
+    "comune": "CASCIANA TERME LARI",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -416,9 +416,9 @@
     "state": "counting"
   },
   {
-    "region": "Sicilia",
-    "province": "Agrigento",
-    "comune": "CAMASTRA",
+    "region": "Emilia-Romagna",
+    "province": "Ferrara",
+    "comune": "FERRARA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -429,9 +429,9 @@
     "state": "counting"
   },
   {
-    "region": "Veneto",
-    "province": "Belluno",
-    "comune": "CANALE D'AGORDO",
+    "region": "Puglia",
+    "province": "Lecce",
+    "comune": "BOTRUGNO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -456,8 +456,8 @@
   },
   {
     "region": "Sicilia",
-    "province": "Agrigento",
-    "comune": "CAMMARATA",
+    "province": "Enna",
+    "comune": "ENNA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -468,9 +468,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Brescia",
-    "comune": "BARGHE",
+    "region": "Emilia-Romagna",
+    "province": "Ferrara",
+    "comune": "GORO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -494,9 +494,9 @@
     "state": "counting"
   },
   {
-    "region": "Sicilia",
-    "province": "Agrigento",
-    "comune": "CAMPOBELLO DI LICATA",
+    "region": "Emilia-Romagna",
+    "province": "Ferrara",
+    "comune": "JOLANDA DI SAVOIA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -521,8 +521,8 @@
   },
   {
     "region": "Sicilia",
-    "province": "Agrigento",
-    "comune": "CANICATTI'",
+    "province": "Enna",
+    "comune": "LEONFORTE",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -533,9 +533,9 @@
     "state": "counting"
   },
   {
-    "region": "Calabria",
-    "province": "Catanzaro",
-    "comune": "BOTRICELLO",
+    "region": "Emilia-Romagna",
+    "province": "Ferrara",
+    "comune": "MASI TORELLO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -586,8 +586,8 @@
   },
   {
     "region": "Sicilia",
-    "province": "Agrigento",
-    "comune": "CASTELTERMINI",
+    "province": "Enna",
+    "comune": "NICOSIA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -611,9 +611,9 @@
     "state": "counting"
   },
   {
-    "region": "Sicilia",
-    "province": "Agrigento",
-    "comune": "CASTROFILIPPO",
+    "region": "Lazio",
+    "province": "Frosinone",
+    "comune": "BELMONTE CASTELLO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -664,8 +664,8 @@
   },
   {
     "region": "Sicilia",
-    "province": "Agrigento",
-    "comune": "CATTOLICA ERACLEA",
+    "province": "Enna",
+    "comune": "PIAZZA ARMERINA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -676,9 +676,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Pavia",
-    "comune": "BORGARELLO",
+    "region": "Campania",
+    "province": "Salerno",
+    "comune": "BELLIZZI",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -703,8 +703,8 @@
   },
   {
     "region": "Sicilia",
-    "province": "Agrigento",
-    "comune": "CIANCIANA",
+    "province": "Enna",
+    "comune": "PIETRAPERZIA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -755,8 +755,8 @@
   },
   {
     "region": "Sicilia",
-    "province": "Agrigento",
-    "comune": "COMITINI",
+    "province": "Enna",
+    "comune": "REGALBUTO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -767,9 +767,9 @@
     "state": "counting"
   },
   {
-    "region": "Sardegna",
-    "province": "Cagliari",
-    "comune": "DECIMOPUTZU",
+    "region": "Friuli-Venezia Giulia",
+    "province": "Gorizia",
+    "comune": "SAN LORENZO ISONTINO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -794,8 +794,8 @@
   },
   {
     "region": "Sicilia",
-    "province": "Agrigento",
-    "comune": "FAVARA",
+    "province": "Enna",
+    "comune": "SPERLINGA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -846,8 +846,8 @@
   },
   {
     "region": "Sicilia",
-    "province": "Agrigento",
-    "comune": "GROTTE",
+    "province": "Enna",
+    "comune": "TROINA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -858,9 +858,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "BAGNATICA",
+    "region": "Puglia",
+    "province": "Lecce",
+    "comune": "CASTRO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -898,8 +898,8 @@
   },
   {
     "region": "Sicilia",
-    "province": "Agrigento",
-    "comune": "JOPPOLO GIANCAXIO",
+    "province": "Enna",
+    "comune": "VALGUARNERA CAROPEPE",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -910,9 +910,9 @@
     "state": "counting"
   },
   {
-    "region": "Toscana",
-    "province": "Arezzo",
-    "comune": "LATERINA PERGINE VALDARNO",
+    "region": "Lombardia",
+    "province": "Como",
+    "comune": "BELLAGIO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -963,8 +963,8 @@
   },
   {
     "region": "Sicilia",
-    "province": "Agrigento",
-    "comune": "LAMPEDUSA E LINOSA",
+    "province": "Enna",
+    "comune": "VILLAROSA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -1027,9 +1027,9 @@
     "state": "counting"
   },
   {
-    "region": "Sicilia",
-    "province": "Agrigento",
-    "comune": "LICATA",
+    "region": "Emilia-Romagna",
+    "province": "Forl\u00ec-Cesena",
+    "comune": "MODIGLIANA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -1092,9 +1092,9 @@
     "state": "counting"
   },
   {
-    "region": "Sicilia",
-    "province": "Agrigento",
-    "comune": "LUCCA SICULA",
+    "region": "Toscana",
+    "province": "Firenze",
+    "comune": "IMPRUNETA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -1105,9 +1105,9 @@
     "state": "counting"
   },
   {
-    "region": "Sicilia",
-    "province": "Catania",
-    "comune": "MANIACE",
+    "region": "Liguria",
+    "province": "Imperia",
+    "comune": "COSTARAINERA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -1131,9 +1131,9 @@
     "state": "counting"
   },
   {
-    "region": "Sicilia",
-    "province": "Agrigento",
-    "comune": "MENFI",
+    "region": "Puglia",
+    "province": "Foggia",
+    "comune": "FOGGIA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -1170,9 +1170,9 @@
     "state": "counting"
   },
   {
-    "region": "Sicilia",
-    "province": "Agrigento",
-    "comune": "MONTALLEGRO",
+    "region": "Toscana",
+    "province": "Firenze",
+    "comune": "LASTRA A SIGNA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -1222,9 +1222,9 @@
     "state": "counting"
   },
   {
-    "region": "Sicilia",
-    "province": "Agrigento",
-    "comune": "MONTEVAGO",
+    "region": "Puglia",
+    "province": "Foggia",
+    "comune": "ISOLE TREMITI",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -1235,9 +1235,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "BIANZANO",
+    "region": "Sicilia",
+    "province": "Catania",
+    "comune": "MILO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -1261,9 +1261,9 @@
     "state": "counting"
   },
   {
-    "region": "Sicilia",
-    "province": "Agrigento",
-    "comune": "NARO",
+    "region": "Puglia",
+    "province": "Foggia",
+    "comune": "LESINA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -1274,9 +1274,9 @@
     "state": "counting"
   },
   {
-    "region": "Campania",
-    "province": "Benevento",
-    "comune": "DUGENTA",
+    "region": "Puglia",
+    "province": "Taranto",
+    "comune": "STATTE",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -1287,9 +1287,9 @@
     "state": "counting"
   },
   {
-    "region": "Sicilia",
-    "province": "Agrigento",
-    "comune": "PALMA DI MONTECHIARO",
+    "region": "Puglia",
+    "province": "Foggia",
+    "comune": "LUCERA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -1300,9 +1300,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Brescia",
-    "comune": "CAINO",
+    "region": "Sardegna",
+    "province": "Cagliari",
+    "comune": "GONI",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -1339,9 +1339,9 @@
     "state": "counting"
   },
   {
-    "region": "Sicilia",
-    "province": "Agrigento",
-    "comune": "PORTO EMPEDOCLE",
+    "region": "Puglia",
+    "province": "Foggia",
+    "comune": "MANFREDONIA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -1352,9 +1352,9 @@
     "state": "counting"
   },
   {
-    "region": "Valle d'Aosta/Vall\u00e9e d'Aoste",
-    "province": "Valle d'Aosta/Vall\u00e9e d'Aoste",
-    "comune": "GABY",
+    "region": "Emilia-Romagna",
+    "province": "Modena",
+    "comune": "PALAGANO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -1365,9 +1365,9 @@
     "state": "counting"
   },
   {
-    "region": "Sicilia",
-    "province": "Agrigento",
-    "comune": "RACALMUTO",
+    "region": "Lombardia",
+    "province": "Cremona",
+    "comune": "CICOGNOLO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -1378,9 +1378,9 @@
     "state": "counting"
   },
   {
-    "region": "Abruzzo",
-    "province": "Chieti",
-    "comune": "FALLO",
+    "region": "Puglia",
+    "province": "Foggia",
+    "comune": "MATTINATA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -1404,9 +1404,9 @@
     "state": "counting"
   },
   {
-    "region": "Sicilia",
-    "province": "Agrigento",
-    "comune": "RAFFADALI",
+    "region": "Puglia",
+    "province": "Foggia",
+    "comune": "MONTELEONE DI PUGLIA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -1417,9 +1417,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "CARENTINO",
+    "region": "Liguria",
+    "province": "Imperia",
+    "comune": "LUCINASCO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -1430,9 +1430,9 @@
     "state": "counting"
   },
   {
-    "region": "Sicilia",
-    "province": "Agrigento",
-    "comune": "RAVANUSA",
+    "region": "Puglia",
+    "province": "Foggia",
+    "comune": "MONTE SANT'ANGELO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -1443,9 +1443,9 @@
     "state": "counting"
   },
   {
-    "region": "Veneto",
-    "province": "Belluno",
-    "comune": "LONGARONE",
+    "region": "Sardegna",
+    "province": "Cagliari",
+    "comune": "GUASILA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -1469,9 +1469,9 @@
     "state": "counting"
   },
   {
-    "region": "Sicilia",
-    "province": "Agrigento",
-    "comune": "REALMONTE",
+    "region": "Puglia",
+    "province": "Foggia",
+    "comune": "MOTTA MONTECORVINO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -1482,9 +1482,9 @@
     "state": "counting"
   },
   {
-    "region": "Toscana",
-    "province": "Arezzo",
-    "comune": "PRATOVECCHIO STIA",
+    "region": "Puglia",
+    "province": "Foggia",
+    "comune": "ORDONA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -1508,9 +1508,22 @@
     "state": "counting"
   },
   {
-    "region": "Sicilia",
-    "province": "Agrigento",
-    "comune": "RIBERA",
+    "region": "Puglia",
+    "province": "Foggia",
+    "comune": "ORSARA DI PUGLIA",
+    "yes": 0,
+    "no": 0,
+    "yes_pct": 0.0,
+    "no_pct": 0.0,
+    "sections_reported": 0,
+    "sections_total": 0,
+    "progress": 0.0,
+    "state": "counting"
+  },
+  {
+    "region": "Campania",
+    "province": "Caserta",
+    "comune": "FALCIANO DEL MASSICO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -1522,21 +1535,8 @@
   },
   {
     "region": "Puglia",
-    "province": "Bari",
-    "comune": "POGGIORSINI",
-    "yes": 0,
-    "no": 0,
-    "yes_pct": 0.0,
-    "no_pct": 0.0,
-    "sections_reported": 0,
-    "sections_total": 0,
-    "progress": 0.0,
-    "state": "counting"
-  },
-  {
-    "region": "Sicilia",
-    "province": "Agrigento",
-    "comune": "SAMBUCA DI SICILIA",
+    "province": "Foggia",
+    "comune": "ORTA NOVA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -1560,9 +1560,9 @@
     "state": "counting"
   },
   {
-    "region": "Sicilia",
-    "province": "Agrigento",
-    "comune": "SAN BIAGIO PLATANI",
+    "region": "Puglia",
+    "province": "Foggia",
+    "comune": "PANNI",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -1586,9 +1586,9 @@
     "state": "counting"
   },
   {
-    "region": "Sicilia",
-    "province": "Agrigento",
-    "comune": "SAN GIOVANNI GEMINI",
+    "region": "Puglia",
+    "province": "Foggia",
+    "comune": "PESCHICI",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -1599,9 +1599,9 @@
     "state": "counting"
   },
   {
-    "region": "Sicilia",
-    "province": "Agrigento",
-    "comune": "SANTA ELISABETTA",
+    "region": "Sardegna",
+    "province": "Cagliari",
+    "comune": "MANDAS",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -1612,9 +1612,9 @@
     "state": "counting"
   },
   {
-    "region": "Sicilia",
-    "province": "Agrigento",
-    "comune": "SANTA MARGHERITA DI BELICE",
+    "region": "Puglia",
+    "province": "Foggia",
+    "comune": "PIETRAMONTECORVINO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -1638,9 +1638,9 @@
     "state": "counting"
   },
   {
-    "region": "Emilia-Romagna",
-    "province": "Parma",
-    "comune": "SORBOLO MEZZANI",
+    "region": "Lazio",
+    "province": "Roma",
+    "comune": "FONTE NUOVA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -1664,9 +1664,9 @@
     "state": "counting"
   },
   {
-    "region": "Sicilia",
-    "province": "Agrigento",
-    "comune": "SANT'ANGELO MUXARO",
+    "region": "Puglia",
+    "province": "Foggia",
+    "comune": "POGGIO IMPERIALE",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -1690,9 +1690,9 @@
     "state": "counting"
   },
   {
-    "region": "Friuli-Venezia Giulia",
-    "province": "Udine",
-    "comune": "FIUMICELLO VILLA VICENTINA",
+    "region": "Piemonte",
+    "province": "Vercelli",
+    "comune": "CELLIO CON BREIA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -1703,9 +1703,9 @@
     "state": "counting"
   },
   {
-    "region": "Sicilia",
-    "province": "Agrigento",
-    "comune": "SANTO STEFANO QUISQUINA",
+    "region": "Puglia",
+    "province": "Foggia",
+    "comune": "RIGNANO GARGANICO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -1755,9 +1755,9 @@
     "state": "counting"
   },
   {
-    "region": "Sicilia",
-    "province": "Agrigento",
-    "comune": "SCIACCA",
+    "region": "Puglia",
+    "province": "Foggia",
+    "comune": "ROCCHETTA SANT'ANTONIO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -1768,9 +1768,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "BRUSAPORTO",
+    "region": "Trentino-Alto Adige/S\u00fcdtirol",
+    "province": "Bolzano/Bozen",
+    "comune": "LA VALLE/WENGEN",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -1781,9 +1781,9 @@
     "state": "counting"
   },
   {
-    "region": "Sicilia",
-    "province": "Agrigento",
-    "comune": "SICULIANA",
+    "region": "Puglia",
+    "province": "Foggia",
+    "comune": "RODI GARGANICO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -1820,9 +1820,9 @@
     "state": "counting"
   },
   {
-    "region": "Sicilia",
-    "province": "Agrigento",
-    "comune": "VILLAFRANCA SICULA",
+    "region": "Puglia",
+    "province": "Foggia",
+    "comune": "ROSETO VALFORTORE",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -1833,9 +1833,9 @@
     "state": "counting"
   },
   {
-    "region": "Sardegna",
-    "province": "Cagliari",
-    "comune": "NURAMINIS",
+    "region": "Toscana",
+    "province": "Firenze",
+    "comune": "SCARPERIA E SAN PIERO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -1872,9 +1872,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "CASSINELLE",
+    "region": "Emilia-Romagna",
+    "province": "Forl\u00ec-Cesena",
+    "comune": "SARSINA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -1911,9 +1911,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "CASTELLANIA COPPI",
+    "region": "Puglia",
+    "province": "Foggia",
+    "comune": "SAN GIOVANNI ROTONDO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -1950,9 +1950,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "CASTELLAR GUIDOBONO",
+    "region": "Puglia",
+    "province": "Foggia",
+    "comune": "SAN MARCO IN LAMIS",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -1976,9 +1976,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "CASTELLAZZO BORMIDA",
+    "region": "Puglia",
+    "province": "Foggia",
+    "comune": "SAN MARCO LA CATOLA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -1989,9 +1989,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Brescia",
-    "comune": "CEVO",
+    "region": "Liguria",
+    "province": "Imperia",
+    "comune": "RIVA LIGURE",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -2002,9 +2002,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "CASTELLETTO D'ERRO",
+    "region": "Puglia",
+    "province": "Foggia",
+    "comune": "SAN NICANDRO GARGANICO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -2054,9 +2054,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "CASTELLETTO D'ORBA",
+    "region": "Puglia",
+    "province": "Foggia",
+    "comune": "SAN PAOLO DI CIVITATE",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -2080,9 +2080,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "CASTELLETTO MERLI",
+    "region": "Puglia",
+    "province": "Foggia",
+    "comune": "SAN SEVERO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -2093,9 +2093,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Novara",
-    "comune": "COLAZZA",
+    "region": "Lazio",
+    "province": "Roma",
+    "comune": "LADISPOLI",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -2106,9 +2106,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "CASTELLETTO MONFERRATO",
+    "region": "Puglia",
+    "province": "Foggia",
+    "comune": "SANT'AGATA DI PUGLIA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -2132,9 +2132,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "CASTELNUOVO BORMIDA",
+    "region": "Puglia",
+    "province": "Foggia",
+    "comune": "SERRACAPRIOLA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -2184,9 +2184,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "CASTELNUOVO SCRIVIA",
+    "region": "Puglia",
+    "province": "Foggia",
+    "comune": "STORNARA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -2197,9 +2197,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "CASTELSPINA",
+    "region": "Liguria",
+    "province": "Imperia",
+    "comune": "SANTO STEFANO AL MARE",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -2210,9 +2210,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "CAVATORE",
+    "region": "Puglia",
+    "province": "Foggia",
+    "comune": "STORNARELLA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -2236,9 +2236,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "CELLA MONTE",
+    "region": "Puglia",
+    "province": "Foggia",
+    "comune": "TORREMAGGIORE",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -2262,22 +2262,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "CERESETO",
-    "yes": 0,
-    "no": 0,
-    "yes_pct": 0.0,
-    "no_pct": 0.0,
-    "sections_reported": 0,
-    "sections_total": 0,
-    "progress": 0.0,
-    "state": "counting"
-  },
-  {
     "region": "Lombardia",
-    "province": "Varese",
-    "comune": "DUNO",
+    "province": "Cremona",
+    "comune": "MALAGNINO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -2289,8 +2276,8 @@
   },
   {
     "region": "Veneto",
-    "province": "Belluno",
-    "comune": "SETTEVILLE",
+    "province": "Verona",
+    "comune": "PALU'",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -2301,9 +2288,22 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "CERRETO GRUE",
+    "region": "Veneto",
+    "province": "Treviso",
+    "comune": "PIEVE DEL GRAPPA",
+    "yes": 0,
+    "no": 0,
+    "yes_pct": 0.0,
+    "no_pct": 0.0,
+    "sections_reported": 0,
+    "sections_total": 0,
+    "progress": 0.0,
+    "state": "counting"
+  },
+  {
+    "region": "Puglia",
+    "province": "Foggia",
+    "comune": "TROIA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -2340,9 +2340,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "CERRINA MONFERRATO",
+    "region": "Puglia",
+    "province": "Foggia",
+    "comune": "VICO DEL GARGANO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -2366,9 +2366,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "CONIOLO",
+    "region": "Puglia",
+    "province": "Foggia",
+    "comune": "VIESTE",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -2405,9 +2405,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "CONZANO",
+    "region": "Puglia",
+    "province": "Foggia",
+    "comune": "VOLTURARA APPULA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -2444,9 +2444,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "COSTA VESCOVATO",
+    "region": "Puglia",
+    "province": "Foggia",
+    "comune": "VOLTURINO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -2496,9 +2496,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "CREMOLINO",
+    "region": "Lombardia",
+    "province": "Cremona",
+    "comune": "OFFANENGO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -2535,9 +2535,9 @@
     "state": "counting"
   },
   {
-    "region": "Valle d'Aosta/Vall\u00e9e d'Aoste",
-    "province": "Valle d'Aosta/Vall\u00e9e d'Aoste",
-    "comune": "SAINT-PIERRE",
+    "region": "Lombardia",
+    "province": "Cremona",
+    "comune": "OLMENETA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -2561,9 +2561,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "DENICE",
+    "region": "Lombardia",
+    "province": "Cremona",
+    "comune": "OSTIANO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -2600,9 +2600,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "DERNICE",
+    "region": "Lombardia",
+    "province": "Cremona",
+    "comune": "PADERNO PONCHIELLI",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -2613,9 +2613,9 @@
     "state": "counting"
   },
   {
-    "region": "Campania",
-    "province": "Benevento",
-    "comune": "SAN NAZZARO",
+    "region": "Sardegna",
+    "province": "Cagliari",
+    "comune": "SAN VITO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -2639,9 +2639,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "FABBRICA CURONE",
+    "region": "Lombardia",
+    "province": "Cremona",
+    "comune": "PALAZZO PIGNANO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -2691,9 +2691,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "FELIZZANO",
+    "region": "Lombardia",
+    "province": "Cremona",
+    "comune": "PANDINO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -2704,9 +2704,9 @@
     "state": "counting"
   },
   {
-    "region": "Trentino-Alto Adige/S\u00fcdtirol",
-    "province": "Bolzano/Bozen",
-    "comune": "RASUN ANTERSELVA/RASEN-ANTHOLZ",
+    "region": "Puglia",
+    "province": "Lecce",
+    "comune": "SAN CASSIANO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -2717,9 +2717,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "FRACONALTO",
+    "region": "Lombardia",
+    "province": "Cremona",
+    "comune": "PERSICO DOSIMO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -2756,9 +2756,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "FRANCAVILLA BISIO",
+    "region": "Lombardia",
+    "province": "Cremona",
+    "comune": "PESCAROLO ED UNITI",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -2795,9 +2795,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "FRASCARO",
+    "region": "Lombardia",
+    "province": "Cremona",
+    "comune": "PESSINA CREMONESE",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -2808,9 +2808,9 @@
     "state": "counting"
   },
   {
-    "region": "Campania",
-    "province": "Benevento",
-    "comune": "SANT'ARCANGELO TRIMONTE",
+    "region": "Sardegna",
+    "province": "Cagliari",
+    "comune": "SELEGAS",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -2848,8 +2848,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "FRASSINELLO MONFERRATO",
+    "province": "Cuneo",
+    "comune": "CISSONE",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -2860,9 +2860,9 @@
     "state": "counting"
   },
   {
-    "region": "Trentino-Alto Adige/S\u00fcdtirol",
-    "province": "Bolzano/Bozen",
-    "comune": "RODENGO/RODENECK",
+    "region": "Lombardia",
+    "province": "Cremona",
+    "comune": "PIANENGO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -2873,9 +2873,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "FRASSINETO PO",
+    "region": "Lombardia",
+    "province": "Cremona",
+    "comune": "PIERANICA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -2925,9 +2925,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "FRESONARA",
+    "region": "Lombardia",
+    "province": "Cremona",
+    "comune": "PIEVE D'OLMI",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -2938,9 +2938,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "FRUGAROLO",
+    "region": "Lombardia",
+    "province": "Cremona",
+    "comune": "PIEVE SAN GIACOMO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -2951,9 +2951,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "FUBINE MONFERRATO",
+    "region": "Lombardia",
+    "province": "Cremona",
+    "comune": "PIZZIGHETTONE",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -2990,9 +2990,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "GABIANO",
+    "region": "Lombardia",
+    "province": "Cremona",
+    "comune": "POZZAGLIO ED UNITI",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -3003,9 +3003,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "GAMALERO",
+    "region": "Lombardia",
+    "province": "Cremona",
+    "comune": "QUINTANO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -3029,9 +3029,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "GARBAGNA",
+    "region": "Lombardia",
+    "province": "Cremona",
+    "comune": "RICENGO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -3042,9 +3042,9 @@
     "state": "counting"
   },
   {
-    "region": "Trentino-Alto Adige/S\u00fcdtirol",
-    "province": "Bolzano/Bozen",
-    "comune": "SAN MARTINO IN PASSIRIA/ST. MARTIN IN PASSEIER",
+    "region": "Lombardia",
+    "province": "Brescia",
+    "comune": "IRMA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -3068,9 +3068,9 @@
     "state": "counting"
   },
   {
-    "region": "Campania",
-    "province": "Avellino",
-    "comune": "ROCCA SAN FELICE",
+    "region": "Lombardia",
+    "province": "Cremona",
+    "comune": "RIPALTA ARPINA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -3081,22 +3081,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Asti",
-    "comune": "MONTIGLIO MONFERRATO",
-    "yes": 0,
-    "no": 0,
-    "yes_pct": 0.0,
-    "no_pct": 0.0,
-    "sections_reported": 0,
-    "sections_total": 0,
-    "progress": 0.0,
-    "state": "counting"
-  },
-  {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "GAVI",
+    "region": "Sardegna",
+    "province": "Cagliari",
+    "comune": "SILIQUA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -3108,8 +3095,21 @@
   },
   {
     "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "CORNALBA",
+    "province": "Cremona",
+    "comune": "RIPALTA CREMASCA",
+    "yes": 0,
+    "no": 0,
+    "yes_pct": 0.0,
+    "no_pct": 0.0,
+    "sections_reported": 0,
+    "sections_total": 0,
+    "progress": 0.0,
+    "state": "counting"
+  },
+  {
+    "region": "Lombardia",
+    "province": "Cremona",
+    "comune": "RIPALTA GUERINA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -3146,9 +3146,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "GIAROLE",
+    "region": "Lombardia",
+    "province": "Cremona",
+    "comune": "RIVAROLO DEL RE ED UNITI",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -3172,9 +3172,22 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "GREMIASCO",
+    "region": "Lombardia",
+    "province": "Cremona",
+    "comune": "RIVOLTA D'ADDA",
+    "yes": 0,
+    "no": 0,
+    "yes_pct": 0.0,
+    "no_pct": 0.0,
+    "sections_reported": 0,
+    "sections_total": 0,
+    "progress": 0.0,
+    "state": "counting"
+  },
+  {
+    "region": "Sardegna",
+    "province": "Cagliari",
+    "comune": "SIURGUS DONIGALA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -3186,8 +3199,8 @@
   },
   {
     "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "COSTA SERINA",
+    "province": "Cremona",
+    "comune": "ROBECCO D'OGLIO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -3198,9 +3211,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "GROGNARDO",
+    "region": "Sardegna",
+    "province": "Cagliari",
+    "comune": "SOLEMINIS",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -3211,22 +3224,9 @@
     "state": "counting"
   },
   {
-    "region": "Trentino-Alto Adige/S\u00fcdtirol",
-    "province": "Bolzano/Bozen",
-    "comune": "SELVA DI VAL GARDENA/WOLKENSTEIN IN GR\u00d6DEN",
-    "yes": 0,
-    "no": 0,
-    "yes_pct": 0.0,
-    "no_pct": 0.0,
-    "sections_reported": 0,
-    "sections_total": 0,
-    "progress": 0.0,
-    "state": "counting"
-  },
-  {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "GRONDONA",
+    "region": "Calabria",
+    "province": "Cosenza",
+    "comune": "MONTEGIORDANO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -3263,9 +3263,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "GUAZZORA",
+    "region": "Calabria",
+    "province": "Cosenza",
+    "comune": "MORANO CALABRO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -3289,9 +3289,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "ISOLA SANT'ANTONIO",
+    "region": "Calabria",
+    "province": "Cosenza",
+    "comune": "MORMANNO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -3315,9 +3315,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "LERMA",
+    "region": "Calabria",
+    "province": "Cosenza",
+    "comune": "MOTTAFOLLONE",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -3341,9 +3341,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Asti",
-    "comune": "PORTACOMARO",
+    "region": "Calabria",
+    "province": "Cosenza",
+    "comune": "NOCARA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -3393,9 +3393,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "MALVICINO",
+    "region": "Calabria",
+    "province": "Cosenza",
+    "comune": "ORIOLO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -3419,9 +3419,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "MASIO",
+    "region": "Calabria",
+    "province": "Cosenza",
+    "comune": "ORSOMARSO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -3445,9 +3445,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "MELAZZO",
+    "region": "Calabria",
+    "province": "Cosenza",
+    "comune": "PALUDI",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -3471,9 +3471,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "MERANA",
+    "region": "Calabria",
+    "province": "Cosenza",
+    "comune": "PANETTIERI",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -3497,9 +3497,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "MIRABELLO MONFERRATO",
+    "region": "Calabria",
+    "province": "Cosenza",
+    "comune": "PAOLA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -3510,9 +3510,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "MOLARE",
+    "region": "Calabria",
+    "province": "Cosenza",
+    "comune": "PAPASIDERO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -3536,9 +3536,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "MOLINO DEI TORTI",
+    "region": "Calabria",
+    "province": "Cosenza",
+    "comune": "PARENTI",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -3562,9 +3562,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "MOMBELLO MONFERRATO",
+    "region": "Calabria",
+    "province": "Cosenza",
+    "comune": "PATERNO CALABRO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -3589,8 +3589,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "MOMPERONE",
+    "province": "Cuneo",
+    "comune": "GENOLA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -3627,9 +3627,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "MONCESTINO",
+    "region": "Calabria",
+    "province": "Cosenza",
+    "comune": "PEDIVIGLIANO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -3653,9 +3653,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "MONGIARDINO LIGURE",
+    "region": "Calabria",
+    "province": "Cosenza",
+    "comune": "PIANE CRATI",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -3679,9 +3679,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "MONLEALE",
+    "region": "Calabria",
+    "province": "Cosenza",
+    "comune": "PIETRAFITTA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -3757,9 +3757,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "MONTACUTO",
+    "region": "Calabria",
+    "province": "Cosenza",
+    "comune": "PIETRAPAOLA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -3783,9 +3783,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "MONTALDEO",
+    "region": "Calabria",
+    "province": "Cosenza",
+    "comune": "PLATACI",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -3796,9 +3796,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "MONTALDO BORMIDA",
+    "region": "Calabria",
+    "province": "Cosenza",
+    "comune": "PRAIA A MARE",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -3822,9 +3822,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "MONTECHIARO D'ACQUI",
+    "region": "Calabria",
+    "province": "Cosenza",
+    "comune": "RENDE",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -3835,9 +3835,9 @@
     "state": "counting"
   },
   {
-    "region": "Trentino-Alto Adige/S\u00fcdtirol",
-    "province": "Bolzano/Bozen",
-    "comune": "VELTURNO/FELDTHURNS",
+    "region": "Abruzzo",
+    "province": "L'Aquila",
+    "comune": "VILLA SANT'ANGELO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -3861,9 +3861,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "MONTEGIOCO",
+    "region": "Calabria",
+    "province": "Cosenza",
+    "comune": "ROCCA IMPERIALE",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -3874,9 +3874,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "MONTEMARZINO",
+    "region": "Calabria",
+    "province": "Cosenza",
+    "comune": "ROGGIANO GRAVINA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -3913,9 +3913,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "MORANO SUL PO",
+    "region": "Calabria",
+    "province": "Cosenza",
+    "comune": "ROGLIANO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -3939,9 +3939,22 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "MORBELLO",
+    "region": "Calabria",
+    "province": "Cosenza",
+    "comune": "ROSE",
+    "yes": 0,
+    "no": 0,
+    "yes_pct": 0.0,
+    "no_pct": 0.0,
+    "sections_reported": 0,
+    "sections_total": 0,
+    "progress": 0.0,
+    "state": "counting"
+  },
+  {
+    "region": "Calabria",
+    "province": "Cosenza",
+    "comune": "ROSETO CAPO SPULICO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -3953,8 +3966,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "MORNESE",
+    "province": "Cuneo",
+    "comune": "LEVICE",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -3965,22 +3978,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "MORSASCO",
-    "yes": 0,
-    "no": 0,
-    "yes_pct": 0.0,
-    "no_pct": 0.0,
-    "sections_reported": 0,
-    "sections_total": 0,
-    "progress": 0.0,
-    "state": "counting"
-  },
-  {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "MURISENGO MONFERRATO",
+    "region": "Calabria",
+    "province": "Cosenza",
+    "comune": "ROTA GRECA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4017,9 +4017,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "NOVI LIGURE",
+    "region": "Calabria",
+    "province": "Cosenza",
+    "comune": "ROVITO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4030,9 +4030,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "OCCIMIANO",
+    "region": "Calabria",
+    "province": "Cosenza",
+    "comune": "SAN BASILE",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4043,9 +4043,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "ODALENGO GRANDE",
+    "region": "Calabria",
+    "province": "Cosenza",
+    "comune": "SAN BENEDETTO ULLANO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4069,9 +4069,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "ODALENGO PICCOLO",
+    "region": "Calabria",
+    "province": "Cosenza",
+    "comune": "SAN COSMO ALBANESE",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4082,9 +4082,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "OLIVOLA",
+    "region": "Calabria",
+    "province": "Cosenza",
+    "comune": "SAN DEMETRIO CORONE",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4095,9 +4095,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "ORSARA BORMIDA",
+    "region": "Calabria",
+    "province": "Cosenza",
+    "comune": "SAN DONATO DI NINEA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4121,9 +4121,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "OTTIGLIO",
+    "region": "Calabria",
+    "province": "Cosenza",
+    "comune": "SAN FILI",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4134,9 +4134,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "OVADA",
+    "region": "Calabria",
+    "province": "Cosenza",
+    "comune": "SANGINETO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4160,9 +4160,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "OVIGLIO",
+    "region": "Calabria",
+    "province": "Cosenza",
+    "comune": "SAN GIORGIO ALBANESE",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4199,9 +4199,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "OZZANO MONFERRATO",
+    "region": "Calabria",
+    "province": "Cosenza",
+    "comune": "SAN GIOVANNI IN FIORE",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4225,9 +4225,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "PADERNA",
+    "region": "Calabria",
+    "province": "Cosenza",
+    "comune": "SAN LORENZO BELLIZZI",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4238,9 +4238,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "PARETO",
+    "region": "Calabria",
+    "province": "Cosenza",
+    "comune": "SAN LORENZO DEL VALLO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4251,9 +4251,9 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "PARODI LIGURE",
+    "region": "Calabria",
+    "province": "Cosenza",
+    "comune": "SAN LUCIDO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4277,9 +4277,22 @@
     "state": "counting"
   },
   {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "PASTURANA",
+    "region": "Calabria",
+    "province": "Cosenza",
+    "comune": "SAN MARCO ARGENTANO",
+    "yes": 0,
+    "no": 0,
+    "yes_pct": 0.0,
+    "no_pct": 0.0,
+    "sections_reported": 0,
+    "sections_total": 0,
+    "progress": 0.0,
+    "state": "counting"
+  },
+  {
+    "region": "Calabria",
+    "province": "Cosenza",
+    "comune": "SAN MARTINO DI FINITA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4291,21 +4304,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "PECETTO DI VALENZA",
-    "yes": 0,
-    "no": 0,
-    "yes_pct": 0.0,
-    "no_pct": 0.0,
-    "sections_reported": 0,
-    "sections_total": 0,
-    "progress": 0.0,
-    "state": "counting"
-  },
-  {
-    "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "PIETRA MARAZZI",
+    "province": "Cuneo",
+    "comune": "MONASTERO DI VASCO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4342,9 +4342,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Brescia",
-    "comune": "PASSIRANO",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "MONASTEROLO CASOTTO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4356,8 +4356,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "POMARO MONFERRATO",
+    "province": "Cuneo",
+    "comune": "MONASTEROLO DI SAVIGLIANO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4382,8 +4382,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "PONTECURONE",
+    "province": "Cuneo",
+    "comune": "MONCHIERO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4408,8 +4408,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "PONTESTURA",
+    "province": "Cuneo",
+    "comune": "MONDOVI'",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4434,8 +4434,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "PONTI",
+    "province": "Cuneo",
+    "comune": "MONESIGLIO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4460,8 +4460,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "PONZANO MONFERRATO",
+    "province": "Cuneo",
+    "comune": "MONFORTE D'ALBA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4486,8 +4486,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "PONZONE",
+    "province": "Cuneo",
+    "comune": "MONTA'",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4525,8 +4525,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "POZZOL GROPPO",
+    "province": "Cuneo",
+    "comune": "MONTALDO DI MONDOVI'",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4538,8 +4538,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "POZZOLO FORMIGARO",
+    "province": "Cuneo",
+    "comune": "MONTALDO ROERO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4564,8 +4564,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "PRASCO",
+    "province": "Cuneo",
+    "comune": "MONTANERA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4577,8 +4577,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "PREDOSA",
+    "province": "Cuneo",
+    "comune": "MONTELUPO ALBESE",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4616,8 +4616,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "QUARGNENTO",
+    "province": "Cuneo",
+    "comune": "MONTEMALE DI CUNEO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4629,8 +4629,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "QUATTORDIO",
+    "province": "Cuneo",
+    "comune": "MONTEROSSO GRANA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4642,8 +4642,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "RICALDONE",
+    "province": "Cuneo",
+    "comune": "MONTEU ROERO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4668,8 +4668,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "RIVALTA BORMIDA",
+    "province": "Cuneo",
+    "comune": "MONTEZEMOLO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4707,8 +4707,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "RIVARONE",
+    "province": "Cuneo",
+    "comune": "MONTICELLO D'ALBA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4720,8 +4720,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "ROCCAFORTE LIGURE",
+    "province": "Cuneo",
+    "comune": "MORETTA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4733,8 +4733,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "ROCCA GRIMALDA",
+    "province": "Cuneo",
+    "comune": "MOROZZO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4746,8 +4746,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "ROCCHETTA LIGURE",
+    "province": "Cuneo",
+    "comune": "MURAZZANO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4759,8 +4759,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "ROSIGNANO MONFERRATO",
+    "province": "Cuneo",
+    "comune": "MURELLO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4772,8 +4772,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "SALA MONFERRATO",
+    "province": "Cuneo",
+    "comune": "NARZOLE",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4798,8 +4798,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "SALE",
+    "province": "Cuneo",
+    "comune": "NEIVE",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4811,8 +4811,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "SAN CRISTOFORO",
+    "province": "Cuneo",
+    "comune": "NEVIGLIE",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4824,8 +4824,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "SAN GIORGIO MONFERRATO",
+    "province": "Cuneo",
+    "comune": "NIELLA BELBO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4837,8 +4837,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "SAN SALVATORE MONFERRATO",
+    "province": "Cuneo",
+    "comune": "NIELLA TANARO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4850,8 +4850,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "SAN SEBASTIANO CURONE",
+    "province": "Cuneo",
+    "comune": "NOVELLO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4876,8 +4876,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "SANT'AGATA FOSSILI",
+    "province": "Cuneo",
+    "comune": "NUCETTO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4889,8 +4889,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "SARDIGLIANO",
+    "province": "Cuneo",
+    "comune": "ONCINO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4928,8 +4928,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "SAREZZANO",
+    "province": "Cuneo",
+    "comune": "ORMEA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4954,8 +4954,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "SERRALUNGA DI CREA",
+    "province": "Cuneo",
+    "comune": "OSTANA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4967,8 +4967,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "SERRAVALLE SCRIVIA",
+    "province": "Cuneo",
+    "comune": "PAESANA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -4993,8 +4993,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "SEZZADIO",
+    "province": "Cuneo",
+    "comune": "PAGNO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5006,8 +5006,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "SILVANO D'ORBA",
+    "province": "Cuneo",
+    "comune": "PAMPARATO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5019,8 +5019,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "SOLERO",
+    "province": "Cuneo",
+    "comune": "PAROLDO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5032,8 +5032,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "SOLONGHELLO",
+    "province": "Cuneo",
+    "comune": "PERLETTO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5071,8 +5071,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "SPIGNO MONFERRATO",
+    "province": "Cuneo",
+    "comune": "PERLO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5084,8 +5084,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "SPINETO SCRIVIA",
+    "province": "Cuneo",
+    "comune": "PEVERAGNO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5110,8 +5110,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "STAZZANO",
+    "province": "Cuneo",
+    "comune": "PEZZOLO VALLE UZZONE",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5136,8 +5136,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "STREVI",
+    "province": "Cuneo",
+    "comune": "PIANFEI",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5162,8 +5162,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "TAGLIOLO MONFERRATO",
+    "province": "Cuneo",
+    "comune": "PIASCO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5175,8 +5175,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "TASSAROLO",
+    "province": "Cuneo",
+    "comune": "PIETRAPORZIO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5188,8 +5188,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "TERRUGGIA",
+    "province": "Cuneo",
+    "comune": "PIOBESI D'ALBA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5201,8 +5201,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "TERZO",
+    "province": "Cuneo",
+    "comune": "PIOZZO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5214,8 +5214,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "TICINETO",
+    "province": "Cuneo",
+    "comune": "POCAPAGLIA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5227,8 +5227,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "TORTONA",
+    "province": "Cuneo",
+    "comune": "POLONGHERA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5253,8 +5253,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "TREVILLE",
+    "province": "Cuneo",
+    "comune": "PONTECHIANALE",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5266,8 +5266,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "TRISOBBIO",
+    "province": "Cuneo",
+    "comune": "PRADLEVES",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5279,8 +5279,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "VALENZA",
+    "province": "Cuneo",
+    "comune": "PRAZZO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5292,8 +5292,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "VALMACCA",
+    "province": "Cuneo",
+    "comune": "PRIERO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5305,8 +5305,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "VIGNALE MONFERRATO",
+    "province": "Cuneo",
+    "comune": "PRIOCCA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5318,8 +5318,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "VIGNOLE BORBERA",
+    "province": "Cuneo",
+    "comune": "PRIOLA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5331,8 +5331,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "VIGUZZOLO",
+    "province": "Cuneo",
+    "comune": "PRUNETTO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5344,8 +5344,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "VILLADEATI",
+    "province": "Cuneo",
+    "comune": "RACCONIGI",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5357,8 +5357,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "VILLALVERNIA",
+    "province": "Cuneo",
+    "comune": "REVELLO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5370,8 +5370,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "VILLAMIROGLIO",
+    "province": "Cuneo",
+    "comune": "RIFREDDO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5383,8 +5383,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "VILLANOVA MONFERRATO",
+    "province": "Cuneo",
+    "comune": "RITTANA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5409,8 +5409,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "VILLAROMAGNANO",
+    "province": "Cuneo",
+    "comune": "ROASCHIA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5435,8 +5435,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "VISONE",
+    "province": "Cuneo",
+    "comune": "ROASCIO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5448,8 +5448,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "VOLPEDO",
+    "province": "Cuneo",
+    "comune": "ROBILANTE",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5461,8 +5461,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "VOLPEGLINO",
+    "province": "Cuneo",
+    "comune": "ROBURENT",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5474,8 +5474,8 @@
   },
   {
     "region": "Piemonte",
-    "province": "Alessandria",
-    "comune": "VOLTAGGIO",
+    "province": "Cuneo",
+    "comune": "ROCCABRUNA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5486,9 +5486,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "SELVINO",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "ROCCA CIGLIE'",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5499,9 +5499,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "SERIATE",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "ROCCA DE' BALDI",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5512,9 +5512,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "SERINA",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "ROCCAFORTE MONDOVI'",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5525,9 +5525,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "SOLTO COLLINA",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "ROCCASPARVERA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5551,9 +5551,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "SONGAVAZZO",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "ROCCAVIONE",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5564,9 +5564,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "SORISOLE",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "ROCCHETTA BELBO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5590,9 +5590,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "SOTTO IL MONTE GIOVANNI XXIII",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "RODDI",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5603,9 +5603,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "SOVERE",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "RODDINO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5629,9 +5629,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "SPINONE AL LAGO",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "RODELLO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5642,9 +5642,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "SPIRANO",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "ROSSANA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5668,9 +5668,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "STEZZANO",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "RUFFIA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5707,9 +5707,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "STROZZA",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "SALE DELLE LANGHE",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5733,9 +5733,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "SUISIO",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "SALE SAN GIOVANNI",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5746,9 +5746,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "TALEGGIO",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "SALICETO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5772,9 +5772,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "TAVERNOLA BERGAMASCA",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "SALMOUR",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5798,9 +5798,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "TELGATE",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "SALUZZO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5811,9 +5811,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "TERNO D'ISOLA",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "SAMBUCO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5837,9 +5837,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "TORRE BOLDONE",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "SAMPEYRE",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5876,9 +5876,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "TORRE DE' ROVERI",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "SAN DAMIANO MACRA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5889,9 +5889,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "TORRE PALLAVICINA",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "SANFRE'",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5902,9 +5902,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "TRESCORE BALNEARIO",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "SANFRONT",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5915,9 +5915,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "TREVIGLIO",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "SAN MICHELE MONDOVI'",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5941,9 +5941,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "TREVIOLO",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "SANT'ALBANO STURA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5980,9 +5980,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "UBIALE CLANEZZO",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "SANTA VITTORIA D'ALBA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -5993,9 +5993,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "URGNANO",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "SANTO STEFANO BELBO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -6019,9 +6019,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "VALBONDIONE",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "SANTO STEFANO ROERO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -6058,9 +6058,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "VALBREMBO",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "SAVIGLIANO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -6084,9 +6084,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "VALLEVE",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "SCAGNELLO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -6123,9 +6123,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "VALTORTA",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "SERRALUNGA D'ALBA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -6136,9 +6136,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "VEDESETA",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "SERRAVALLE LANGHE",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -6162,9 +6162,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Como",
-    "comune": "VALSOLDA",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "SINIO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -6175,9 +6175,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "VERDELLINO",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "SOMANO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -6188,9 +6188,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "VERDELLO",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "SOMMARIVA DEL BOSCO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -6201,9 +6201,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "VERTOVA",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "SOMMARIVA PERNO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -6227,9 +6227,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "VIADANICA",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "STROPPO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -6240,9 +6240,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "VIGANO SAN MARTINO",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "TARANTASCA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -6253,9 +6253,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "VIGOLO",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "TORRE BORMIDA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -6266,9 +6266,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "VILLA D'ADDA",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "TORRE MONDOVI'",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -6292,9 +6292,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "VILLA DI SERIO",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "TORRE SAN GIORGIO",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -6305,9 +6305,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "VILLA D'OGNA",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "TORRESINA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -6331,9 +6331,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "VILLONGO",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "TREZZO TINELLA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -6344,9 +6344,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "VILMINORE DI SCALVE",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "TRINITA'",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -6370,9 +6370,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "ZANDOBBIO",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "VALDIERI",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -6383,9 +6383,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "ZANICA",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "VALGRANA",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
@@ -6409,9 +6409,9 @@
     "state": "counting"
   },
   {
-    "region": "Lombardia",
-    "province": "Bergamo",
-    "comune": "ZOGNO",
+    "region": "Piemonte",
+    "province": "Cuneo",
+    "comune": "VALLORIATE",
     "yes": 0,
     "no": 0,
     "yes_pct": 0.0,
