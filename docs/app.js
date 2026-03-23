@@ -91,6 +91,46 @@ function fmtPerc2(n) {
 }
 
 // ---------------------------------------------------------------------------
+// Tug-of-war results bar
+// ---------------------------------------------------------------------------
+
+function renderResultsBarHTML(percSi, percNo, size) {
+    const hasData = percSi != null && percNo != null;
+    const siW = hasData ? percSi : 50;
+    const noW = hasData ? (100 - percSi) : 50;
+    const barCls = 'tow-bar tow-bar--' + size + (hasData ? '' : ' tow-bar--empty');
+
+    let html = '';
+
+    // Hero bar: show labels and percentages above
+    if (size === 'hero') {
+        html += '<div class="bar-header">';
+        if (hasData) {
+            html += '<div class="bar-side bar-side-si">';
+            html += '<span class="bar-side-label">S\u00ec</span>';
+            html += '<span class="bar-side-perc">' + fmtPerc(percSi) + '</span>';
+            html += '</div>';
+            html += '<div class="bar-side bar-side-no">';
+            html += '<span class="bar-side-label">No</span>';
+            html += '<span class="bar-side-perc">' + fmtPerc(percNo) + '</span>';
+            html += '</div>';
+        }
+        html += '</div>';
+    }
+
+    // The bar
+    html += '<div class="' + barCls + '">';
+    html += '<div class="tow-si" style="width:' + siW + '%"></div>';
+    html += '<div class="tow-no" style="width:' + noW + '%"></div>';
+    if (!hasData && size !== 'mini') {
+        html += '<span class="tow-empty-label">In attesa dei risultati</span>';
+    }
+    html += '</div>';
+
+    return html;
+}
+
+// ---------------------------------------------------------------------------
 // Data loading
 // ---------------------------------------------------------------------------
 
@@ -121,34 +161,59 @@ function updateSummaryPanel() {
     if (!nationalData) return;
     const d = nationalData;
 
-    // Affluenza
-    document.getElementById('nat-elettori').textContent = fmtNum(d.elettori);
+    // --- Affluenza elements ---
     document.getElementById('nat-affluenza').textContent = fmtPerc(d.affluenza.best_perc);
-    document.getElementById('nat-votanti').textContent = fmtNum(d.affluenza.best_votanti);
 
-    // Progression — compact inline text
+    document.getElementById('stats-inline').textContent =
+        'Elettori: ' + fmtNum(d.elettori) + ' \u00b7 Votanti: ' + fmtNum(d.affluenza.best_votanti);
+
+    // Progression
     const progEl = document.getElementById('progression');
     const parts = d.affluenza.snapshots
         .filter(s => s.votanti > 0)
-        .map(s => `${s.label}\u00a0\u2192\u00a0${fmtPerc(s.perc)}`);
-    progEl.textContent = parts.join('  |\u00a0\u00a0');
+        .map(s => 'ore ' + s.label + ' ' + fmtPerc(s.perc));
+    progEl.textContent = parts.join(' \u2192 ');
 
-    // Results
+    // --- Results bar (shared data for both modes) ---
+    const percSi = d.has_results ? d.results.perc_si : null;
+    const percNo = d.has_results ? d.results.perc_no : null;
+
+    // Compact bar in affluenza section
+    document.getElementById('hero-bar-affluenza').innerHTML =
+        renderResultsBarHTML(percSi, percNo, 'compact');
+
+    // Hero bar in risultati section
+    document.getElementById('hero-bar-risultati').innerHTML =
+        renderResultsBarHTML(percSi, percNo, 'hero');
+
+    // --- Risultati secondary info ---
+    const sezioniEl = document.getElementById('bar-sezioni');
     if (d.has_results) {
-        document.getElementById('risultati-available').style.display = '';
-        document.getElementById('risultati-unavailable').style.display = 'none';
-        const r = d.results;
-        document.getElementById('nat-si-perc').textContent = fmtPerc(r.perc_si);
-        document.getElementById('nat-no-perc').textContent = fmtPerc(r.perc_no);
-        document.getElementById('nat-si-count').textContent = fmtNum(r.si) + ' voti';
-        document.getElementById('nat-no-count').textContent = fmtNum(r.no) + ' voti';
-        document.getElementById('nat-validi').textContent = fmtNum(r.validi);
-        document.getElementById('bar-si').style.width = r.perc_si + '%';
-        document.getElementById('bar-no').style.width = r.perc_no + '%';
+        if (d.results.sezioni_scrutinate != null && d.results.sezioni_totali != null && d.results.sezioni_totali > 0) {
+            const percSez = d.results.sezioni_scrutinate / d.results.sezioni_totali * 100;
+            sezioniEl.textContent = 'Sezioni scrutinate: ' + fmtNum(d.results.sezioni_scrutinate) +
+                ' su ' + fmtNum(d.results.sezioni_totali) + ' (' + fmtPerc(percSez) + ')';
+        } else {
+            sezioniEl.textContent = 'Scrutinio in corso';
+        }
     } else {
-        document.getElementById('risultati-available').style.display = 'none';
-        document.getElementById('risultati-unavailable').style.display = '';
+        sezioniEl.textContent = 'Scrutinio non ancora iniziato';
     }
+
+    const secEl = document.getElementById('risultati-secondary');
+    if (d.has_results) {
+        const secParts = ['Voti validi: ' + fmtNum(d.results.validi)];
+        if (d.results.bianche != null) secParts.push('Schede bianche: ' + fmtNum(d.results.bianche));
+        if (d.results.nulle != null) secParts.push('Schede nulle: ' + fmtNum(d.results.nulle));
+        secEl.textContent = secParts.join(' \u00b7 ');
+    } else {
+        secEl.textContent = '';
+    }
+
+    // Affluenza summary line in risultati mode
+    document.getElementById('affluenza-summary-line').textContent =
+        'Affluenza: ' + fmtPerc(d.affluenza.best_perc) +
+        ' (' + fmtNum(d.affluenza.best_votanti) + ' su ' + fmtNum(d.elettori) + ')';
 
     // Last update timestamp
     const now = new Date();
@@ -382,16 +447,6 @@ function updateLegend() {
 // Regions table
 // ---------------------------------------------------------------------------
 
-// Map column keys to their bar color CSS variable
-const BAR_COLORS = {
-    best_perc: 'var(--color-turnout-light)',
-    perc_12: 'var(--color-turnout-light)',
-    perc_19: 'var(--color-turnout-light)',
-    perc_23: 'var(--color-turnout-light)',
-    perc_si: 'var(--color-si-light)',
-    perc_no: 'var(--color-no-light)',
-};
-
 function buildRegionsTable() {
     if (!regionsData) return;
 
@@ -401,30 +456,27 @@ function buildRegionsTable() {
     let columns;
     if (currentMode === 'affluenza') {
         columns = [
-            { key: 'regione', label: 'Regione', align: 'left', fmt: v => v },
+            { key: 'regione', label: 'Regione', fmt: v => v },
             { key: 'elettori', label: 'Elettori', fmt: fmtNum },
             { key: 'best_votanti', label: 'Votanti', fmt: fmtNum },
             { key: 'best_perc', label: 'Affluenza %', fmt: fmtPerc },
-            { key: 'perc_12', label: '12:00', fmt: fmtPerc },
-            { key: 'perc_19', label: '19:00', fmt: fmtPerc },
-            { key: 'perc_23', label: '23:00', fmt: fmtPerc },
         ];
     } else {
         columns = [
-            { key: 'regione', label: 'Regione', align: 'left', fmt: v => v },
+            { key: 'regione', label: 'Regione', fmt: v => v },
             { key: 'elettori', label: 'Elettori', fmt: fmtNum },
-            { key: 'perc_si', label: 'S\u00ec %', fmt: fmtPerc },
-            { key: 'perc_no', label: 'No %', fmt: fmtPerc },
-            { key: 'si', label: 'Voti S\u00ec', fmt: fmtNum },
-            { key: 'no', label: 'Voti No', fmt: fmtNum },
-            { key: 'validi', label: 'Validi', fmt: fmtNum },
+            { key: 'bar', label: 'S\u00ec/No', sortKey: 'perc_si', fmt: null },
+            { key: 'perc_si', label: '% S\u00ec', fmt: fmtPerc },
+            { key: 'perc_no', label: '% No', fmt: fmtPerc },
+            { key: 'best_perc', label: 'Affluenza %', fmt: fmtPerc },
         ];
     }
 
     // Build header
-    thead.innerHTML = columns.map(c =>
-        `<th data-col="${c.key}" onclick="sortTable('${c.key}')">${c.label}<span class="sort-arrow">${sortCol === c.key ? (sortAsc ? '\u25B2' : '\u25BC') : ''}</span></th>`
-    ).join('');
+    thead.innerHTML = columns.map(c => {
+        const sk = c.sortKey || c.key;
+        return `<th data-col="${sk}" onclick="sortTable('${sk}')">${c.label}<span class="sort-arrow">${sortCol === sk ? (sortAsc ? '\u25B2' : '\u25BC') : ''}</span></th>`;
+    }).join('');
 
     // Flatten data for table
     let rows = regionsData.map(r => ({
@@ -432,9 +484,6 @@ function buildRegionsTable() {
         elettori: r.elettori,
         best_votanti: r.affluenza.best_votanti,
         best_perc: r.affluenza.best_perc,
-        perc_12: r.affluenza.snapshots[0].perc,
-        perc_19: r.affluenza.snapshots[1].perc,
-        perc_23: r.affluenza.snapshots[2].perc,
         perc_si: r.results.perc_si,
         perc_no: r.results.perc_no,
         si: r.results.si,
@@ -453,17 +502,14 @@ function buildRegionsTable() {
         });
     }
 
-    // Build body with inline data bars
+    // Build body
     tbody.innerHTML = rows.map(r =>
         '<tr>' + columns.map(c => {
-            const val = r[c.key];
-            const barColor = BAR_COLORS[c.key];
-            if (barColor && val != null && !isNaN(val)) {
-                // Percentage columns: bar width = value clamped to 100
-                const w = Math.min(val, 100);
-                return `<td class="cell-bar" style="--bar-width:${w}%;--bar-color:${barColor}"><span>${c.fmt(val)}</span></td>`;
+            if (c.key === 'bar') {
+                return '<td class="cell-mini-bar">' +
+                    renderResultsBarHTML(r.perc_si, r.perc_no, 'mini') + '</td>';
             }
-            return `<td>${c.fmt(val)}</td>`;
+            return `<td>${c.fmt(r[c.key])}</td>`;
         }).join('') + '</tr>'
     ).join('');
 }

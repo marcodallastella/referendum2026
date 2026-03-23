@@ -6,18 +6,15 @@
     --font-display: 'Libre Franklin', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --font-body: 'Source Serif 4', Georgia, 'Times New Roman', serif;
     --color-bg: #ffffff;
-    --color-bg-alt: #f8f8f8;
+    --color-bg-alt: #f9f9f9;
     --color-text: #1a1a1a;
     --color-text-secondary: #666666;
     --color-text-muted: #999999;
     --color-border: #e0e0e0;
-    --color-rule: #b71c1c;
-    --color-si: #27ae60;
+    --color-rule: #c0392b;
+    --color-si: #1a8a4a;
     --color-no: #c0392b;
     --color-turnout: #2c7fb8;
-    --color-si-light: rgba(39, 174, 96, 0.10);
-    --color-no-light: rgba(192, 57, 43, 0.10);
-    --color-turnout-light: rgba(44, 127, 184, 0.10);
     --layout-max: 960px;
 }
 
@@ -53,7 +50,7 @@ header {
 
 .header-title h1 {
     font-family: var(--font-display);
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 700;
     letter-spacing: -0.02em;
     line-height: 1.15;
@@ -61,7 +58,7 @@ header {
 }
 
 .subtitle {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     font-weight: 400;
     color: var(--color-text-secondary);
     margin-top: 0.15rem;
@@ -74,187 +71,225 @@ header {
     margin-top: 0.75rem;
 }
 
-/* Toggle ------------------------------------------------------------------ */
+/* Toggle (tab style) ------------------------------------------------------ */
 
 .toggle-container {
     display: flex;
-    gap: 0;
+    gap: 1.5rem;
     flex-shrink: 0;
-    border: 1px solid var(--color-border);
-    border-radius: 3px;
-    overflow: hidden;
 }
 
 .toggle-btn {
-    padding: 0.4rem 1rem;
+    padding: 0.25rem 0;
     border: none;
+    border-bottom: 2px solid transparent;
     background: transparent;
-    color: var(--color-text-secondary);
+    color: var(--color-text-muted);
     font-family: var(--font-display);
-    font-size: 0.85rem;
-    font-weight: 600;
+    font-size: 0.9rem;
+    font-weight: 400;
     cursor: pointer;
-    transition: color 0.15s, background 0.15s;
-}
-
-.toggle-btn + .toggle-btn {
-    border-left: 1px solid var(--color-border);
+    transition: color 0.15s, border-color 0.15s;
 }
 
 .toggle-btn.active {
-    background: var(--color-text);
-    color: #fff;
+    color: var(--color-text);
+    font-weight: 600;
+    border-bottom-color: var(--color-rule);
 }
 
 .toggle-btn:hover:not(.active) {
-    color: var(--color-text);
-    background: var(--color-bg-alt);
+    color: var(--color-text-secondary);
 }
 
-/* Hero stats -------------------------------------------------------------- */
+/* Hero section ------------------------------------------------------------ */
 
 .hero {
     max-width: var(--layout-max);
     padding: 1.5rem 2rem 1rem;
 }
 
-.hero-content {
-    /* no centering */
-}
-
 /* Affluenza hero */
-.hero-primary {
-    margin-bottom: 0.75rem;
-}
-
 .hero-number {
     display: block;
     font-family: var(--font-display);
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 700;
     line-height: 1;
     letter-spacing: -0.03em;
     font-variant-numeric: tabular-nums;
+    color: var(--color-turnout);
 }
 
 .hero-label {
     display: block;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     font-weight: 600;
     color: var(--color-text-secondary);
     text-transform: uppercase;
     letter-spacing: 0.06em;
+    margin-top: 0.35rem;
+}
+
+.hero-stats-inline {
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+    margin-top: 0.75rem;
+}
+
+.progression {
+    font-size: 0.8125rem;
+    color: var(--color-text-muted);
     margin-top: 0.25rem;
 }
 
-.hero-primary .hero-number {
-    color: var(--color-turnout);
-}
-
-.hero-secondary {
+/* Compact bar section (inside affluenza hero) */
+.compact-bar-section {
     display: flex;
-    gap: 2rem;
-    margin-bottom: 1rem;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
 }
 
-.hero-stat {
+.compact-bar-label {
+    font-size: 0.6875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-text-muted);
+    flex-shrink: 0;
+}
+
+.compact-bar-wrap {
+    flex: 1;
+}
+
+/* Tug-of-war results bar -------------------------------------------------- */
+
+.bar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 0.5rem;
+}
+
+.bar-side {
     display: flex;
     flex-direction: column;
 }
 
-.hero-stat-value {
-    font-family: var(--font-display);
-    font-size: 1.25rem;
-    font-weight: 700;
-    font-variant-numeric: tabular-nums;
-    line-height: 1.2;
+.bar-side-no {
+    text-align: right;
+    align-items: flex-end;
 }
 
-.hero-stat-label {
-    font-size: 0.78rem;
-    color: var(--color-text-muted);
+.bar-side-label {
+    font-size: 0.875rem;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.04em;
 }
 
-/* Risultati hero */
-.hero-results {
-    display: flex;
-    gap: 2.5rem;
-    align-items: flex-start;
-    margin-bottom: 0.75rem;
+.bar-side-perc {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    font-variant-numeric: tabular-nums;
 }
 
-.hero-result {
-    display: flex;
-    flex-direction: column;
-}
-
-.hero-result-si .hero-number {
+.bar-side-si .bar-side-label,
+.bar-side-si .bar-side-perc {
     color: var(--color-si);
 }
 
-.hero-result-no .hero-number {
+.bar-side-no .bar-side-label,
+.bar-side-no .bar-side-perc {
     color: var(--color-no);
 }
 
-.hero-result .hero-label {
-    margin-top: 0.1rem;
-}
-
-.hero-result .hero-stat-label {
-    margin-top: 0.15rem;
-}
-
-.hero-stat-validi {
-    align-self: flex-end;
-    margin-bottom: 0.5rem;
-}
-
-/* Results bar */
-.results-bar {
+.tow-bar {
     display: flex;
-    height: 6px;
-    border-radius: 3px;
+    border-radius: 6px;
     overflow: hidden;
-    background: #eee;
-    max-width: 480px;
-    margin-bottom: 0.5rem;
+    position: relative;
+    width: 100%;
 }
 
-.bar-si {
+.tow-bar--hero {
+    height: 48px;
+}
+
+.tow-bar--compact {
+    height: 24px;
+}
+
+.tow-bar--mini {
+    height: 14px;
+    width: 160px;
+    border-radius: 3px;
+    display: inline-flex;
+}
+
+.tow-si {
     background: var(--color-si);
-    transition: width 0.5s;
+    transition: width 0.5s ease;
+    min-width: 0;
 }
 
-.bar-no {
+.tow-no {
     background: var(--color-no);
-    transition: width 0.5s;
+    transition: width 0.5s ease;
+    min-width: 0;
 }
 
-.results-placeholder {
-    padding: 1rem 0;
+.tow-bar--empty .tow-si,
+.tow-bar--empty .tow-no {
+    background: var(--color-border);
+}
+
+.tow-empty-label {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     color: var(--color-text-muted);
-    font-family: var(--font-body);
     font-style: italic;
-    font-size: 0.95rem;
+    font-size: 0.875rem;
+    white-space: nowrap;
 }
 
-/* Progression (compact inline) */
-.progression {
-    font-size: 0.82rem;
+.tow-bar--compact .tow-empty-label {
+    font-size: 0.75rem;
+}
+
+/* Results bar metadata */
+.bar-meta {
+    font-size: 0.8125rem;
     color: var(--color-text-muted);
-    line-height: 1.6;
+    margin-top: 0.5rem;
 }
 
-/* Last update timestamp */
+.risultati-secondary {
+    font-size: 0.8125rem;
+    color: var(--color-text-secondary);
+    margin-top: 0.35rem;
+}
+
+.affluenza-summary {
+    font-size: 0.8125rem;
+    color: var(--color-text-secondary);
+    margin-top: 0.25rem;
+}
+
+/* Last update */
 .hero-meta {
-    margin-top: 0.5rem;
-    padding-top: 0.5rem;
+    margin-top: 0.75rem;
 }
 
 .last-update {
-    font-size: 0.78rem;
+    font-size: 0.75rem;
     color: var(--color-text-muted);
 }
 
@@ -325,7 +360,6 @@ header {
 
 .table-wrapper {
     overflow-x: auto;
-    border: 1px solid var(--color-border);
 }
 
 #regions-table {
@@ -344,21 +378,21 @@ header {
 
 #regions-table th {
     background: #fff;
-    color: var(--color-text);
-    font-weight: 700;
-    font-size: 0.75rem;
+    color: var(--color-text-secondary);
+    font-weight: 400;
+    font-size: 0.6875rem;
     text-transform: uppercase;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.06em;
     cursor: pointer;
     user-select: none;
     position: sticky;
     top: 0;
     z-index: 2;
-    border-bottom: 2px solid var(--color-text);
+    border-bottom: 1px solid var(--color-text);
 }
 
 #regions-table th:hover {
-    color: var(--color-rule);
+    color: var(--color-text);
 }
 
 #regions-table th:first-child,
@@ -367,8 +401,12 @@ header {
     font-weight: 600;
 }
 
+#regions-table td.cell-mini-bar {
+    text-align: center;
+}
+
 #regions-table tbody tr {
-    border-bottom: 1px solid #efefef;
+    border-bottom: 1px solid #f0f0f0;
 }
 
 #regions-table tbody tr:nth-child(even) {
@@ -376,35 +414,13 @@ header {
 }
 
 #regions-table tbody tr:hover {
-    background: #f0f0f0;
+    background: #f0f4ff;
 }
 
 #regions-table .sort-arrow {
-    font-size: 0.65rem;
+    font-size: 0.6rem;
     margin-left: 2px;
     opacity: 0.5;
-}
-
-/* Inline data bars in table cells */
-#regions-table td.cell-bar {
-    position: relative;
-    overflow: hidden;
-}
-
-#regions-table td.cell-bar::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: var(--bar-width, 0%);
-    background: var(--bar-color, transparent);
-    z-index: 0;
-}
-
-#regions-table td.cell-bar span {
-    position: relative;
-    z-index: 1;
 }
 
 /* Download ---------------------------------------------------------------- */
@@ -430,28 +446,32 @@ header {
     border-color: var(--color-text);
 }
 
-/* Info section ------------------------------------------------------------- */
+/* Info/Colophon section --------------------------------------------------- */
 
 .info-section {
+    background: #f5f5f5;
+    padding: 2.5rem 0;
+}
+
+.info-inner {
     max-width: var(--layout-max);
-    padding: 1.5rem 2rem;
-    border-top: 1px solid var(--color-border);
+    padding: 0 2rem;
 }
 
 .info-section h2 {
     font-family: var(--font-display);
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.06em;
     color: var(--color-text-secondary);
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.75rem;
 }
 
 .info-content {
     max-width: 600px;
     font-family: var(--font-body);
-    font-size: 0.9rem;
+    font-size: 0.9375rem;
     line-height: 1.7;
     color: var(--color-text);
 }
@@ -473,8 +493,8 @@ header {
 /* Footer ------------------------------------------------------------------ */
 
 footer {
-    max-width: var(--layout-max);
-    padding: 1rem 2rem 2rem;
+    padding: 1.5rem 2rem;
+    text-align: center;
     font-size: 0.75rem;
     color: var(--color-text-muted);
 }
@@ -554,12 +574,11 @@ footer {
     }
 
     .hero-number {
-        font-size: 3rem;
+        font-size: 2.25rem;
     }
 
-    .hero-results {
-        gap: 1.5rem;
-        flex-wrap: wrap;
+    .bar-side-perc {
+        font-size: 1.5rem;
     }
 
     .map-section {
@@ -575,12 +594,12 @@ footer {
         padding: 1rem;
     }
 
-    .info-section {
-        padding: 1rem;
-    }
-
     .download-section {
         padding: 0.5rem 1rem 1rem;
+    }
+
+    .info-inner {
+        padding: 0 1rem;
     }
 
     footer {
@@ -593,6 +612,27 @@ footer {
         font-size: 0.7rem;
         padding: 8px 10px;
     }
+
+    /* Sticky first column on mobile */
+    #regions-table th:first-child,
+    #regions-table td:first-child {
+        position: sticky;
+        left: 0;
+        z-index: 1;
+        background: #fff;
+    }
+
+    #regions-table th:first-child {
+        z-index: 3;
+    }
+
+    #regions-table tbody tr:nth-child(even) td:first-child {
+        background: var(--color-bg-alt);
+    }
+
+    #regions-table tbody tr:hover td:first-child {
+        background: #f0f4ff;
+    }
 }
 
 @media (max-width: 480px) {
@@ -604,20 +644,15 @@ footer {
         font-size: 0.82rem;
     }
 
-    .toggle-btn {
-        padding: 0.35rem 0.75rem;
-        font-size: 0.8rem;
-    }
-
     .hero-number {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
-    .hero-results {
-        gap: 1.25rem;
+    .bar-side-perc {
+        font-size: 1.25rem;
     }
 
-    .hero-stat-value {
-        font-size: 1.1rem;
+    .tow-bar--mini {
+        width: 120px;
     }
 }

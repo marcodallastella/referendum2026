@@ -55,52 +55,27 @@
 </header>
 
 <main>
-    <!-- Hero stats -->
     <section id="summary" class="hero">
+        <!-- Affluenza mode -->
         <div id="summary-affluenza" class="hero-content" style="display:none;">
-            <div class="hero-primary">
-                <span class="hero-number" id="nat-affluenza">&mdash;</span>
-                <span class="hero-label">Affluenza nazionale</span>
-            </div>
-            <div class="hero-secondary">
-                <div class="hero-stat">
-                    <span class="hero-stat-value" id="nat-elettori">&mdash;</span>
-                    <span class="hero-stat-label">Elettori</span>
-                </div>
-                <div class="hero-stat">
-                    <span class="hero-stat-value" id="nat-votanti">&mdash;</span>
-                    <span class="hero-stat-label">Votanti</span>
-                </div>
-            </div>
+            <span class="hero-number" id="nat-affluenza">&mdash;</span>
+            <span class="hero-label">affluenza nazionale</span>
+            <div class="hero-stats-inline" id="stats-inline"></div>
             <div class="progression" id="progression"></div>
+            <div class="compact-bar-section">
+                <span class="compact-bar-label">Risultati</span>
+                <div id="hero-bar-affluenza" class="compact-bar-wrap"></div>
+            </div>
         </div>
+
+        <!-- Risultati mode -->
         <div id="summary-risultati" class="hero-content">
-            <div id="risultati-available" style="display:none;">
-                <div class="hero-results">
-                    <div class="hero-result hero-result-si">
-                        <span class="hero-number" id="nat-si-perc">&mdash;</span>
-                        <span class="hero-label">S&igrave;</span>
-                        <span class="hero-stat-label" id="nat-si-count"></span>
-                    </div>
-                    <div class="hero-result hero-result-no">
-                        <span class="hero-number" id="nat-no-perc">&mdash;</span>
-                        <span class="hero-label">No</span>
-                        <span class="hero-stat-label" id="nat-no-count"></span>
-                    </div>
-                    <div class="hero-stat hero-stat-validi">
-                        <span class="hero-stat-value" id="nat-validi">&mdash;</span>
-                        <span class="hero-stat-label">Voti validi</span>
-                    </div>
-                </div>
-                <div class="results-bar">
-                    <div class="bar-si" id="bar-si"></div>
-                    <div class="bar-no" id="bar-no"></div>
-                </div>
-            </div>
-            <div id="risultati-unavailable" class="results-placeholder">
-                <p>Risultati non ancora disponibili &mdash; scrutinio in corso</p>
-            </div>
+            <div id="hero-bar-risultati"></div>
+            <div class="bar-meta" id="bar-sezioni"></div>
+            <div class="risultati-secondary" id="risultati-secondary"></div>
+            <div class="affluenza-summary" id="affluenza-summary-line"></div>
         </div>
+
         <div class="hero-meta">
             <span class="last-update" id="last-update"></span>
         </div>
@@ -129,17 +104,19 @@
     <section class="download-section">
         <a href="data/referendum_results.csv" download class="download-link">Scarica i dati grezzi (CSV) &darr;</a>
     </section>
+</main>
 
-    <!-- Informazioni -->
-    <section class="info-section">
+<!-- Info/Colophon -->
+<section class="info-section">
+    <div class="info-inner">
         <h2>Informazioni</h2>
         <div class="info-content">
             <p>Questo sito &egrave; stato creato da <strong>Marco Dalla Stella</strong>, giornalista, per rendere accessibili i risultati del referendum costituzionale 2026.</p>
             <p>I dati provengono dal <strong>Ministero dell'Interno</strong> e vengono elaborati automaticamente: il sistema scarica i dati ufficiali in formato aperto, li organizza per comune e regione, e li visualizza sulla mappa interattiva e nelle tabelle. Puoi esplorare l'affluenza alle urne e i risultati del voto per ogni area d'Italia.</p>
             <p>Il sito &egrave; stato realizzato con l'aiuto di <strong>Claude Code</strong>, lo strumento di programmazione di Anthropic. <a href="https://www.buymeacoffee.com/marcodallastella" target="_blank" rel="noopener">Supporta questo progetto &rarr;</a></p>
         </div>
-    </section>
-</main>
+    </div>
+</section>
 
 <footer>
     <p>Dati: Ministero dell'Interno &mdash; eleapi.interno.gov.it</p>
