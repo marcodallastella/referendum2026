@@ -31,11 +31,10 @@ def load_data(csv_path: Path) -> pd.DataFrame:
     # 3. Fill missing text columns to prevent grouping errors
     for c in ["region", "province", "comune", "state"]:
         if c not in df.columns:
-            df[c] = "Sconosciuto" # Unknown
+            df[c] = "Sconosciuto"
         df[c] = df[c].fillna("Sconosciuto")
 
     return df
-
 
 def enrich(df: pd.DataFrame) -> pd.DataFrame:
     # Calculate progress safely
@@ -48,7 +47,6 @@ def enrich(df: pd.DataFrame) -> pd.DataFrame:
         df["state"] = df["progress"].apply(lambda x: "final" if x >= 1 else "counting")
         
     return df
-
 
 def compute_totals(df: pd.DataFrame) -> dict:
     total_yes = df["yes"].sum()
@@ -69,7 +67,6 @@ def compute_totals(df: pd.DataFrame) -> dict:
         "progress": float(df["sections_reported"].sum() / df["sections_total"].sum()) if df["sections_total"].sum() > 0 else 0.0,
     }
 
-
 def group_by_region(df: pd.DataFrame) -> list[dict]:
     grouped = []
     for region_name, g in df.groupby("region"):
@@ -77,14 +74,12 @@ def group_by_region(df: pd.DataFrame) -> list[dict]:
         grouped.append({"region": region_name, **totals})
     return grouped
 
-
 def group_by_province(df: pd.DataFrame) -> list[dict]:
     grouped = []
     for (region, province), g in df.groupby(["region", "province"]):
         totals = compute_totals(g)
         grouped.append({"region": region, "province": province, **totals})
     return grouped
-
 
 def build_comuni(df: pd.DataFrame) -> list[dict]:
     cols = [
@@ -94,7 +89,6 @@ def build_comuni(df: pd.DataFrame) -> list[dict]:
     ]
     existing_cols = [c for c in cols if c in df.columns]
     return df[existing_cols].to_dict(orient="records")
-
 
 def main():
     parser = argparse.ArgumentParser(description="Prepare referendum results JSON")
@@ -109,4 +103,31 @@ def main():
 
     csv_path = Path(args.csv)
     output_dir = Path(args.output_dir)
-    output_dir.mkdir(parents=True, exist_
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    if not csv_path.exists():
+        print(f"Error: {csv_path} not found. Ensure the scraper ran successfully.")
+        sys.exit(1)
+
+    print(f"Reading {csv_path}...")
+    df = load_data(csv_path)
+
+    print("Processing results...")
+    df = enrich(df)
+
+    print("Generating summaries...")
+    national = compute_totals(df)
+    regions = group_by_region(df)
+    provinces = group_by_province(df)
+    comuni = build_comuni(df)
+
+    # Save outputs safely
+    (output_dir / "national.json").write_text(json.dumps(national, indent=2))
+    (output_dir / "regions.json").write_text(json.dumps(regions, indent=2))
+    (output_dir / "provinces.json").write_text(json.dumps(provinces, indent=2))
+    (output_dir / "comuni.json").write_text(json.dumps(comuni, indent=2))
+
+    print(f"Done ✅ Files saved to {output_dir}/. Ready for the frontend!")
+
+if __name__ == "__main__":
+    main()
