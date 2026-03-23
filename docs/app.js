@@ -466,8 +466,8 @@ function updateLegend() {
                 `<div class="legend-row"><span class="legend-swatch" style="background:${c}"></span>${labels[i]}</div>`
             ).join('');
     } else {
-        const labels = ['0% S\u00ec', '20%', '35%', '45%', '50%', '55%', '65%', '80%', '100% S\u00ec'];
-        el.innerHTML = '<div class="legend-title">% S\u00ec</div>' +
+        const labels = ['NO', '', '', '', '', '', '', '', 'S\u00ec'];
+        el.innerHTML = '<div class="legend-title">Legenda</div>' +
             RISULTATI_COLORS.map((c, i) =>
                 `<div class="legend-row"><span class="legend-swatch" style="background:${c}"></span>${labels[i]}</div>`
             ).join('') +
