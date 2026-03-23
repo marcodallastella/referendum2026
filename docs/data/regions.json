@@ -1,22 +1,402 @@
 [
   {
-    "elettori": 0,
-    "fetched_at": "2026-03-23T15:34:44.693884",
-    "has_results": false,
+    "elettori": 1015499,
+    "fetched_at": "2026-03-23T19:09:34.973962+00:00",
+    "has_results": true,
     "affluenza": {
-      "best_perc": 0.0,
-      "best_votanti": 0,
+      "best_perc": 60.5,
+      "best_votanti": 614353,
       "snapshots": []
     },
     "results": {
-      "perc_si": 0.0,
-      "perc_no": 0.0,
-      "si": 0,
-      "no": 0,
-      "validi": 0
+      "perc_si": 48.23,
+      "perc_no": 51.77,
+      "si": 293838,
+      "no": 315440,
+      "validi": 609278,
+      "sezioni_scrutinate": 1628,
+      "sezioni_totali": 1628
     },
-    "scrutini_p": 0,
-    "scrutini_t": 0,
-    "regione": "Sconosciuto"
+    "regione": "ABRUZZO"
+  },
+  {
+    "elettori": 432962,
+    "fetched_at": "2026-03-23T19:09:34.973962+00:00",
+    "has_results": true,
+    "affluenza": {
+      "best_perc": 53.26,
+      "best_votanti": 230593,
+      "snapshots": []
+    },
+    "results": {
+      "perc_si": 39.97,
+      "perc_no": 60.03,
+      "si": 91205,
+      "no": 136997,
+      "validi": 228202,
+      "sezioni_scrutinate": 683,
+      "sezioni_totali": 683
+    },
+    "regione": "BASILICATA"
+  },
+  {
+    "elettori": 1467969,
+    "fetched_at": "2026-03-23T19:09:34.973962+00:00",
+    "has_results": true,
+    "affluenza": {
+      "best_perc": 48.39,
+      "best_votanti": 710278,
+      "snapshots": []
+    },
+    "results": {
+      "perc_si": 42.74,
+      "perc_no": 57.26,
+      "si": 301133,
+      "no": 403513,
+      "validi": 704646,
+      "sezioni_scrutinate": 2407,
+      "sezioni_totali": 2407
+    },
+    "regione": "CALABRIA"
+  },
+  {
+    "elettori": 4450547,
+    "fetched_at": "2026-03-23T19:09:34.973962+00:00",
+    "has_results": true,
+    "affluenza": {
+      "best_perc": 50.38,
+      "best_votanti": 2241992,
+      "snapshots": []
+    },
+    "results": {
+      "perc_si": 34.78,
+      "perc_no": 65.22,
+      "si": 774742,
+      "no": 1453050,
+      "validi": 2227792,
+      "sezioni_scrutinate": 5824,
+      "sezioni_totali": 5824
+    },
+    "regione": "CAMPANIA"
+  },
+  {
+    "elettori": 3365900,
+    "fetched_at": "2026-03-23T19:09:34.973962+00:00",
+    "has_results": true,
+    "affluenza": {
+      "best_perc": 66.67,
+      "best_votanti": 2244197,
+      "snapshots": []
+    },
+    "results": {
+      "perc_si": 42.75,
+      "perc_no": 57.25,
+      "si": 954053,
+      "no": 1277512,
+      "validi": 2231565,
+      "sezioni_scrutinate": 4525,
+      "sezioni_totali": 4525
+    },
+    "regione": "EMILIA-ROMAGNA"
+  },
+  {
+    "elettori": 931461,
+    "fetched_at": "2026-03-23T19:09:34.973962+00:00",
+    "has_results": true,
+    "affluenza": {
+      "best_perc": 61.64,
+      "best_votanti": 574170,
+      "snapshots": []
+    },
+    "results": {
+      "perc_si": 54.47,
+      "perc_no": 45.53,
+      "si": 310743,
+      "no": 259721,
+      "validi": 570464,
+      "sezioni_scrutinate": 1354,
+      "sezioni_totali": 1354
+    },
+    "regione": "FRIULI-VENEZIA GIULIA"
+  },
+  {
+    "elettori": 4350049,
+    "fetched_at": "2026-03-23T19:09:34.973962+00:00",
+    "has_results": true,
+    "affluenza": {
+      "best_perc": 15.95,
+      "best_votanti": 693853,
+      "snapshots": []
+    },
+    "results": {
+      "perc_si": 45.42,
+      "perc_no": 54.58,
+      "si": 1212297,
+      "no": 1456960,
+      "validi": 2669257,
+      "sezioni_scrutinate": 5313,
+      "sezioni_totali": 5314
+    },
+    "regione": "LAZIO"
+  },
+  {
+    "elettori": 1180907,
+    "fetched_at": "2026-03-23T19:09:34.973962+00:00",
+    "has_results": true,
+    "affluenza": {
+      "best_perc": 62.24,
+      "best_votanti": 734968,
+      "snapshots": []
+    },
+    "results": {
+      "perc_si": 42.97,
+      "perc_no": 57.03,
+      "si": 313935,
+      "no": 416683,
+      "validi": 730618,
+      "sezioni_scrutinate": 1784,
+      "sezioni_totali": 1784
+    },
+    "regione": "LIGURIA"
+  },
+  {
+    "elettori": 7573434,
+    "fetched_at": "2026-03-23T19:09:34.973962+00:00",
+    "has_results": true,
+    "affluenza": {
+      "best_perc": 57.92,
+      "best_votanti": 4386694,
+      "snapshots": []
+    },
+    "results": {
+      "perc_si": 53.57,
+      "perc_no": 46.43,
+      "si": 2572122,
+      "no": 2229591,
+      "validi": 4801713,
+      "sezioni_scrutinate": 9256,
+      "sezioni_totali": 9258
+    },
+    "regione": "LOMBARDIA"
+  },
+  {
+    "elettori": 1157824,
+    "fetched_at": "2026-03-23T19:09:34.973962+00:00",
+    "has_results": true,
+    "affluenza": {
+      "best_perc": 63.77,
+      "best_votanti": 738337,
+      "snapshots": []
+    },
+    "results": {
+      "perc_si": 46.26,
+      "perc_no": 53.74,
+      "si": 339091,
+      "no": 393928,
+      "validi": 733019,
+      "sezioni_scrutinate": 1570,
+      "sezioni_totali": 1570
+    },
+    "regione": "MARCHE"
+  },
+  {
+    "elettori": 237348,
+    "fetched_at": "2026-03-23T19:09:34.973962+00:00",
+    "has_results": true,
+    "affluenza": {
+      "best_perc": 54.01,
+      "best_votanti": 128185,
+      "snapshots": []
+    },
+    "results": {
+      "perc_si": 45.3,
+      "perc_no": 54.7,
+      "si": 57566,
+      "no": 69517,
+      "validi": 127083,
+      "sezioni_scrutinate": 393,
+      "sezioni_totali": 393
+    },
+    "regione": "MOLISE"
+  },
+  {
+    "elettori": 3303313,
+    "fetched_at": "2026-03-23T19:09:34.973962+00:00",
+    "has_results": true,
+    "affluenza": {
+      "best_perc": 62.61,
+      "best_votanti": 2068122,
+      "snapshots": []
+    },
+    "results": {
+      "perc_si": 46.5,
+      "perc_no": 53.5,
+      "si": 955168,
+      "no": 1099038,
+      "validi": 2054206,
+      "sezioni_scrutinate": 4790,
+      "sezioni_totali": 4790
+    },
+    "regione": "PIEMONTE"
+  },
+  {
+    "elettori": 3171631,
+    "fetched_at": "2026-03-23T19:09:34.973962+00:00",
+    "has_results": true,
+    "affluenza": {
+      "best_perc": 52.03,
+      "best_votanti": 1650119,
+      "snapshots": []
+    },
+    "results": {
+      "perc_si": 42.86,
+      "perc_no": 57.14,
+      "si": 702639,
+      "no": 936589,
+      "validi": 1639228,
+      "sezioni_scrutinate": 4032,
+      "sezioni_totali": 4032
+    },
+    "regione": "PUGLIA"
+  },
+  {
+    "elettori": 1320821,
+    "fetched_at": "2026-03-23T19:09:34.973962+00:00",
+    "has_results": true,
+    "affluenza": {
+      "best_perc": 42.0,
+      "best_votanti": 554779,
+      "snapshots": []
+    },
+    "results": {
+      "perc_si": 40.56,
+      "perc_no": 59.44,
+      "si": 281766,
+      "no": 412866,
+      "validi": 694632,
+      "sezioni_scrutinate": 1846,
+      "sezioni_totali": 1847
+    },
+    "regione": "SARDEGNA"
+  },
+  {
+    "elettori": 3860565,
+    "fetched_at": "2026-03-23T19:09:34.973962+00:00",
+    "has_results": true,
+    "affluenza": {
+      "best_perc": 46.13,
+      "best_votanti": 1780724,
+      "snapshots": []
+    },
+    "results": {
+      "perc_si": 39.02,
+      "perc_no": 60.98,
+      "si": 689506,
+      "no": 1077512,
+      "validi": 1767018,
+      "sezioni_scrutinate": 5306,
+      "sezioni_totali": 5306
+    },
+    "regione": "SICILIA"
+  },
+  {
+    "elettori": 2797496,
+    "fetched_at": "2026-03-23T19:09:34.973962+00:00",
+    "has_results": true,
+    "affluenza": {
+      "best_perc": 58.55,
+      "best_votanti": 1637881,
+      "snapshots": []
+    },
+    "results": {
+      "perc_si": 41.84,
+      "perc_no": 58.16,
+      "si": 770925,
+      "no": 1071462,
+      "validi": 1842387,
+      "sezioni_scrutinate": 3922,
+      "sezioni_totali": 3923
+    },
+    "regione": "TOSCANA"
+  },
+  {
+    "elettori": 819907,
+    "fetched_at": "2026-03-23T19:09:34.973962+00:00",
+    "has_results": true,
+    "affluenza": {
+      "best_perc": 52.45,
+      "best_votanti": 430053,
+      "snapshots": []
+    },
+    "results": {
+      "perc_si": 49.41,
+      "perc_no": 50.59,
+      "si": 210916,
+      "no": 215945,
+      "validi": 426861,
+      "sezioni_scrutinate": 1019,
+      "sezioni_totali": 1019
+    },
+    "regione": "TRENTINO-ALTO ADIGE"
+  },
+  {
+    "elettori": 658041,
+    "fetched_at": "2026-03-23T19:09:34.973962+00:00",
+    "has_results": true,
+    "affluenza": {
+      "best_perc": 65.05,
+      "best_votanti": 428074,
+      "snapshots": []
+    },
+    "results": {
+      "perc_si": 48.32,
+      "perc_no": 51.68,
+      "si": 205479,
+      "no": 219751,
+      "validi": 425230,
+      "sezioni_scrutinate": 997,
+      "sezioni_totali": 997
+    },
+    "regione": "UMBRIA"
+  },
+  {
+    "elettori": 97949,
+    "fetched_at": "2026-03-23T19:09:34.973962+00:00",
+    "has_results": true,
+    "affluenza": {
+      "best_perc": 58.59,
+      "best_votanti": 57391,
+      "snapshots": []
+    },
+    "results": {
+      "perc_si": 48.19,
+      "perc_no": 51.81,
+      "si": 27395,
+      "no": 29456,
+      "validi": 56851,
+      "sezioni_scrutinate": 150,
+      "sezioni_totali": 150
+    },
+    "regione": "VALLE D'AOSTA"
+  },
+  {
+    "elettori": 3750551,
+    "fetched_at": "2026-03-23T19:09:34.973962+00:00",
+    "has_results": true,
+    "affluenza": {
+      "best_perc": 63.48,
+      "best_votanti": 2380676,
+      "snapshots": []
+    },
+    "results": {
+      "perc_si": 58.41,
+      "perc_no": 41.59,
+      "si": 1382701,
+      "no": 984393,
+      "validi": 2367094,
+      "sezioni_scrutinate": 4729,
+      "sezioni_totali": 4729
+    },
+    "regione": "VENETO"
   }
 ]

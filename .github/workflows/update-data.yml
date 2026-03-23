@@ -1,24 +1,7 @@
 name: Update referendum data
 
 on:
-  schedule:
-    - cron: "*/5 * * * *"
   workflow_dispatch:
-    inputs:
-      mode:
-        description: "Scraping mode"
-        required: false
-        default: "both"
-        type: choice
-        options:
-          - affluence
-          - results
-          - both
-      regenerate_boundaries:
-        description: "Regenerate GeoJSON boundaries (slow, needs geopandas)"
-        required: false
-        default: false
-        type: boolean
 
 permissions:
   contents: write
@@ -30,46 +13,18 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
 
     steps:
       - name: Checkout
-        # TODO(security): pin to SHA, e.g. actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         uses: actions/checkout@v4
 
-      - name: Determine scraping mode
-        id: mode
-        run: |
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            echo "mode=${{ inputs.mode }}" >> "$GITHUB_OUTPUT"
-          else
-            # Scheduled runs: determine mode from time
-            HOUR=$(date -u +%-H)
-            DAY=$(date -u +%-d)
-            if [ "$DAY" = "22" ]; then
-              # Sunday: only affluence snapshots
-              echo "mode=affluence" >> "$GITHUB_OUTPUT"
-            elif [ "$DAY" = "23" ] && [ "$HOUR" -lt 14 ]; then
-              # Monday before 14 UTC (15:00 IT): affluence
-              echo "mode=affluence" >> "$GITHUB_OUTPUT"
-            elif [ "$DAY" = "23" ] && [ "$HOUR" -eq 14 ] && [ "$(date -u +%-M)" -le 35 ]; then
-              # Monday 14:00-14:35 UTC: both (final affluence + early results)
-              echo "mode=both" >> "$GITHUB_OUTPUT"
-            else
-              # Monday 14:35+ UTC: results only
-              echo "mode=both" >> "$GITHUB_OUTPUT"
-            fi
-          fi
-          echo "Scraping mode: $(grep '^mode=' "$GITHUB_OUTPUT" | cut -d= -f2)"
-
       - name: Set up Python
-        # TODO(security): pin to SHA, e.g. actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2b
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
       - name: Cache pip packages
-        # TODO(security): pin to SHA, e.g. actions/cache@1bd1e32a3bdc45362d1e726936510720a7c6158d
         uses: actions/cache@v4
         with:
           path: ~/.cache/pip
@@ -77,19 +32,13 @@ jobs:
           restore-keys: pip-${{ runner.os }}-
 
       - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
-          # Only install geopandas if we need to regenerate boundaries
-          if [ "${{ inputs.regenerate_boundaries }}" = "true" ]; then
-            pip install geopandas
-          fi
+        run: pip install -r requirements.txt
 
       - name: Run scraper
         id: scrape
         run: |
           set +e
           python scraper.py \
-            --mode "${{ steps.mode.outputs.mode }}" \
             --output-dir output \
             --concurrency 3 \
             --delay 0.3
@@ -97,7 +46,7 @@ jobs:
           set -e
 
           if [ $EXIT_CODE -ne 0 ]; then
-            echo "::warning::Scraper exited with code $EXIT_CODE — API may be down or rate-limited"
+            echo "::warning::Scraper exited with code $EXIT_CODE"
             echo "scraper_ok=false" >> "$GITHUB_OUTPUT"
           else
             echo "scraper_ok=true" >> "$GITHUB_OUTPUT"
@@ -111,20 +60,20 @@ jobs:
             echo "CSV found: $(wc -l < output/referendum_results.csv) lines"
           else
             echo "csv_exists=false" >> "$GITHUB_OUTPUT"
-            echo "::warning::No CSV output found — skipping site rebuild"
+            echo "::error::No CSV output found"
           fi
 
       - name: Rebuild site data
         if: steps.check_csv.outputs.csv_exists == 'true'
         run: |
-          SKIP_FLAG="--skip-boundaries"
-          if [ "${{ inputs.regenerate_boundaries }}" = "true" ]; then
-            SKIP_FLAG=""
-          fi
-
           python prepare_site.py \
             --csv output/referendum_results.csv \
-            $SKIP_FLAG
+            --output-dir docs/data \
+            --geojson docs/data/italy.geojson
+
+      - name: Copy CSV for download
+        if: steps.check_csv.outputs.csv_exists == 'true'
+        run: cp output/referendum_results.csv docs/data/referendum_results.csv
 
       - name: Commit and push
         if: steps.check_csv.outputs.csv_exists == 'true'
@@ -138,9 +87,7 @@ jobs:
             echo "No changes to commit — data unchanged"
           else
             TIMESTAMP=$(date -u +%Y-%m-%dT%H:%M)
-            MODE="${{ steps.mode.outputs.mode }}"
-            git commit -m "Update referendum data ($MODE) [$TIMESTAMP]"
-            # Safety net: rebase in case another run committed while we were working
+            git commit -m "Update referendum data [$TIMESTAMP]"
             git pull --rebase origin main
             git push
             echo "Pushed updated data"

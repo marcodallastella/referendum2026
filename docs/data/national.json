@@ -1,19 +1,19 @@
 {
-  "elettori": 0,
-  "fetched_at": "2026-03-23T15:34:44.684447",
-  "has_results": false,
+  "elettori": 45944174,
+  "fetched_at": "2026-03-23T19:09:34.973962+00:00",
+  "has_results": true,
   "affluenza": {
-    "best_perc": 0.0,
-    "best_votanti": 0,
+    "best_perc": 52.86,
+    "best_votanti": 24285439,
     "snapshots": []
   },
   "results": {
-    "perc_si": 0.0,
-    "perc_no": 0.0,
-    "si": 0,
-    "no": 0,
-    "validi": 0
-  },
-  "scrutini_p": 0,
-  "scrutini_t": 0
+    "perc_si": 46.26,
+    "perc_no": 53.74,
+    "si": 12447220,
+    "no": 14459924,
+    "validi": 26907144,
+    "sezioni_scrutinate": 61528,
+    "sezioni_totali": 61533
+  }
 }

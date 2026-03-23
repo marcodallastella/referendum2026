@@ -309,15 +309,9 @@ function buildPopupHTML(p) {
     html += '</div>';
 
     if (p.perc_si != null && p.perc_si !== undefined) {
-        html += '<div class="popup-section"><div class="popup-section-title">Risultati</div>';
-        html += '<div class="popup-row"><span>S\u00ec</span><span class="popup-val" style="color:var(--color-si)">' + fmtPerc(p.perc_si) + ' (' + fmtNum(p.si) + ')</span></div>';
-        html += '<div class="popup-row"><span>No</span><span class="popup-val" style="color:var(--color-no)">' + fmtPerc(p.perc_no) + ' (' + fmtNum(p.no) + ')</span></div>';
-        if (p.bianche != null && p.bianche !== undefined) {
-            html += '<div class="popup-row"><span>Sch. bianche</span><span class="popup-val">' + fmtNum(p.bianche) + '</span></div>';
-        }
-        if (p.nulle != null && p.nulle !== undefined) {
-            html += '<div class="popup-row"><span>Sch. nulle</span><span class="popup-val">' + fmtNum(p.nulle) + '</span></div>';
-        }
+        html += '<div class="popup-section"><div class="popup-section-title">Risultati (dati provinciali)</div>';
+        html += '<div class="popup-row"><span>S\u00ec</span><span class="popup-val" style="color:var(--color-si)">' + fmtPerc(p.perc_si) + '</span></div>';
+        html += '<div class="popup-row"><span>No</span><span class="popup-val" style="color:var(--color-no)">' + fmtPerc(p.perc_no) + '</span></div>';
         html += '</div>';
     }
 
