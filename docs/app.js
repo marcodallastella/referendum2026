@@ -229,7 +229,7 @@ function buildPopupHTML(p) {
 async function loadMap() {
     map = new maplibregl.Map({
         container: 'map',
-        style: 'https://api.maptiler.com/maps/streets-v2/style.json?key=YOUR_MAPTILER_KEY',
+        style: 'https://api.maptiler.com/maps/streets-v2/style.json?key=i42Day2QPvdGffgVmXQI',
         center: [12.5, 42.5],
         zoom: 5.5,
         minZoom: 5,
