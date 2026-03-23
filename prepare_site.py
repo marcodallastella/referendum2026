@@ -16,20 +16,16 @@ import pandas as pd
 
 
 def load_data(csv_path: Path) -> pd.DataFrame:
-    if not csv_path.exists():
-        print(f"Error: {csv_path} not found.")
-        sys.exit(1)
-
     df = pd.read_csv(csv_path)
 
-    # --- FIX 1: MERGE ROWS ---
-    # The scraper produces two rows per municipality (data_type='affluence' and 'results').
-    # We group by the municipality code (cm_code) to combine them into one row.
+    # Merge rows: results and affluence into one
     if "cm_code" in df.columns:
-        df = df.groupby("cm_code").first().reset_index()
+        # We use 'max' for numeric columns to ensure we get the latest turnout 
+        # and the latest vote counts in one row.
+        df = df.groupby("cm_code").max().reset_index()
 
-    # --- FIX 2: COLUMN MAPPING ---
-    # Map the Ministry API keys from the scraper to the names used in this script.
+    # Expand the mapping to include 'best_perc' (latest turnout)
+    # The scraper uses com3_perc for the final turnout (3rd communication)
     mapping = {
         "regione_name": "region",
         "provincia_name": "province",
@@ -39,23 +35,19 @@ def load_data(csv_path: Path) -> pd.DataFrame:
         "scr_scrut_t": "sections_reported",
         "scr_voti_si": "yes",
         "scr_voti_no": "no",
+        "com3_perc": "best_perc" # <--- THIS IS WHAT APP.JS IS LOOKING FOR
     }
+    
     df = df.rename(columns={k: v for k, v in mapping.items() if k in df.columns})
-
-    # Ensure numeric types and handle missing columns
-    numeric_cols = [
-        "electors",
-        "sections_total",
-        "sections_reported",
-        "yes",
-        "no",
-    ]
-
-    for col in numeric_cols:
-        if col in df.columns:
-            df[col] = pd.to_numeric(df[col], errors="coerce").fillna(0)
-        else:
-            df[col] = 0
+    
+    # If com3_perc isn't available yet, fallback to the last reported turnout
+    if "best_perc" not in df.columns:
+        for c in ["com3_perc", "com2_perc", "com1_perc"]:
+            if c in df.columns:
+                df["best_perc"] = df[c]
+                break
+        if "best_perc" not in df.columns:
+            df["best_perc"] = 0
 
     return df
 
@@ -84,18 +76,19 @@ def compute_totals(df: pd.DataFrame) -> dict:
     total_yes = df["yes"].sum()
     total_no = df["no"].sum()
     total_votes = total_yes + total_no
-
-    reported = df["sections_reported"].sum()
-    total_sections = df["sections_total"].sum()
+    
+    # Calculate the average turnout (weighted by electors)
+    avg_turnout = (df["best_perc"] * df["electors"]).sum() / df["electors"].sum() if df["electors"].sum() > 0 else 0
 
     return {
         "yes": int(total_yes),
         "no": int(total_no),
         "yes_pct": float(total_yes / total_votes * 100) if total_votes else 0.0,
         "no_pct": float(total_no / total_votes * 100) if total_votes else 0.0,
-        "sections_reported": int(reported),
-        "sections_total": int(total_sections),
-        "progress": float(reported / total_sections) if total_sections > 0 else 0.0,
+        "best_perc": float(avg_turnout), # <--- ADDED FOR APP.JS
+        "sections_reported": int(df["sections_reported"].sum()),
+        "sections_total": int(df["sections_total"].sum()),
+        "progress": float(df["sections_reported"].sum() / df["sections_total"].sum()) if df["sections_total"].sum() > 0 else 0.0,
     }
 
 
