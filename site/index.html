@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Referendum Costituzionale 2026 — Risultati</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="header-inner">
+        <div class="header-title">
+            <h1>Referendum Costituzionale 2026</h1>
+            <p class="subtitle">Riforma della giustizia — 22-23 marzo 2026</p>
+        </div>
+        <div class="toggle-container">
+            <button id="btn-affluenza" class="toggle-btn" onclick="setMode('affluenza')">Affluenza</button>
+            <button id="btn-risultati" class="toggle-btn active" onclick="setMode('risultati')">Risultati</button>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- Summary panel -->
+    <section id="summary" class="summary-panel">
+        <div class="summary-inner">
+            <div id="summary-affluenza" class="summary-content" style="display:none;">
+                <div class="stat-group">
+                    <div class="stat">
+                        <span class="stat-value" id="nat-elettori">—</span>
+                        <span class="stat-label">Elettori</span>
+                    </div>
+                    <div class="stat stat-highlight">
+                        <span class="stat-value" id="nat-affluenza">—</span>
+                        <span class="stat-label">Affluenza</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value" id="nat-votanti">—</span>
+                        <span class="stat-label">Votanti</span>
+                    </div>
+                </div>
+                <div class="progression" id="progression">
+                    <!-- filled by JS -->
+                </div>
+            </div>
+            <div id="summary-risultati" class="summary-content">
+                <div id="risultati-available" style="display:none;">
+                    <div class="stat-group results-stats">
+                        <div class="stat stat-si">
+                            <span class="stat-value" id="nat-si-perc">—</span>
+                            <span class="stat-label">S&igrave;</span>
+                            <span class="stat-sub" id="nat-si-count"></span>
+                        </div>
+                        <div class="stat stat-no">
+                            <span class="stat-value" id="nat-no-perc">—</span>
+                            <span class="stat-label">No</span>
+                            <span class="stat-sub" id="nat-no-count"></span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value" id="nat-validi">—</span>
+                            <span class="stat-label">Voti validi</span>
+                        </div>
+                    </div>
+                    <div class="results-bar-container">
+                        <div class="results-bar">
+                            <div class="bar-si" id="bar-si"></div>
+                            <div class="bar-no" id="bar-no"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="risultati-unavailable" class="results-placeholder">
+                    <p>Risultati non ancora disponibili &mdash; scrutinio in corso</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map -->
+    <section class="map-section">
+        <div id="map"></div>
+        <div id="legend" class="legend"></div>
+    </section>
+
+    <!-- Regional breakdown -->
+    <section class="regions-section">
+        <h2>Dettaglio regionale</h2>
+        <div class="table-wrapper">
+            <table id="regions-table">
+                <thead>
+                    <tr id="regions-thead-row">
+                        <!-- filled by JS -->
+                    </tr>
+                </thead>
+                <tbody id="regions-tbody">
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Download -->
+    <section class="download-section">
+        <a href="data/referendum_results.csv" download class="download-link">Scarica i dati grezzi (CSV)</a>
+    </section>
+
+    <!-- Informazioni -->
+    <section class="info-section">
+        <h2>Informazioni</h2>
+        <div class="info-content">
+            <p>Questo sito &egrave; stato creato da <strong>Marco Dalla Stella</strong>, giornalista, per rendere accessibili i risultati del referendum costituzionale 2026.</p>
+            <p>I dati provengono dal <strong>Ministero dell'Interno</strong> e vengono elaborati automaticamente: il sistema scarica i dati ufficiali in formato aperto, li organizza per comune e regione, e li visualizza sulla mappa interattiva e nelle tabelle. Puoi esplorare l'affluenza alle urne e i risultati del voto per ogni area d'Italia.</p>
+            <p>Il sito &egrave; stato realizzato con l'aiuto di <strong>Claude Code</strong>, lo strumento di programmazione di Anthropic.</p>
+            <p>Se trovi utili questi dati e vuoi supportare il progetto, puoi offrirmi un caff&egrave;:</p>
+            <a href="https://www.buymeacoffee.com/marcodallastella" target="_blank" rel="noopener" class="coffee-link">Offrimi un caff&egrave;</a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>Dati: Ministero dell'Interno &mdash; eleapi.interno.gov.it</p>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

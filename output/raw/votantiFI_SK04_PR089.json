@@ -1,0 +1,1004 @@
+{
+  "int": null,
+  "note": null,
+  "scheda": null,
+  "enti": {
+    "ente_p": {
+      "desc": "VERONA",
+      "cod": 89,
+      "ele_m": 0,
+      "ele_f": 0,
+      "ele_t": 701013,
+      "com": [
+        {
+          "cod_reg": 5,
+          "com_att": 3,
+          "num_com": 4
+        }
+      ],
+      "com_vot": null
+    },
+    "enti_f": [
+      {
+        "tipo": "COMUNE",
+        "desc": "AFFI",
+        "cod": 10,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1917,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "ALBAREDO D'ADIGE",
+        "cod": 20,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 3904,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "ANGIARI",
+        "cod": 30,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2006,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "ARCOLE",
+        "cod": 40,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 4793,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "BADIA CALAVENA",
+        "cod": 50,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2102,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "BARDOLINO",
+        "cod": 60,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 5279,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "BELFIORE",
+        "cod": 70,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2428,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "BEVILACQUA",
+        "cod": 80,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1354,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "BONAVIGO",
+        "cod": 90,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1451,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "BOSCHI SANT'ANNA",
+        "cod": 100,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1101,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "BOSCO CHIESANUOVA",
+        "cod": 110,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2867,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "BOVOLONE",
+        "cod": 120,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 11908,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "BRENTINO BELLUNO",
+        "cod": 130,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1044,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "BRENZONE SUL GARDA",
+        "cod": 140,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1874,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "BUSSOLENGO",
+        "cod": 150,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 15739,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "BUTTAPIETRA",
+        "cod": 160,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 5411,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "CALDIERO",
+        "cod": 170,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 5888,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "CAPRINO VERONESE",
+        "cod": 180,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 6632,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "CASALEONE",
+        "cod": 190,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 4346,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "CASTAGNARO",
+        "cod": 200,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2743,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "CASTEL D'AZZANO",
+        "cod": 210,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 9260,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "CASTELNUOVO DEL GARDA",
+        "cod": 220,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 10201,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "CAVAION VERONESE",
+        "cod": 230,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 4634,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "CAZZANO DI TRAMIGNA",
+        "cod": 240,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1165,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "CEREA",
+        "cod": 250,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 13155,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "CERRO VERONESE",
+        "cod": 260,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2120,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "COLOGNA VENETA",
+        "cod": 270,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 6377,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "COLOGNOLA AI COLLI",
+        "cod": 280,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 6425,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "CONCAMARISE",
+        "cod": 290,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 770,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "COSTERMANO SUL GARDA",
+        "cod": 300,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 3187,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "DOLCE'",
+        "cod": 310,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1862,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "ERBE'",
+        "cod": 320,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1381,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "ERBEZZO",
+        "cod": 330,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 624,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "FERRARA DI MONTE BALDO",
+        "cod": 340,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 246,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "FUMANE",
+        "cod": 350,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 3349,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "GARDA",
+        "cod": 360,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2933,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "GAZZO VERONESE",
+        "cod": 370,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 3920,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "GREZZANA",
+        "cod": 380,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 8295,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "ILLASI",
+        "cod": 390,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 4153,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "ISOLA DELLA SCALA",
+        "cod": 400,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 8684,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "ISOLA RIZZA",
+        "cod": 410,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2433,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "LAVAGNO",
+        "cod": 420,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 6787,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "LAZISE",
+        "cod": 430,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 5233,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "LEGNAGO",
+        "cod": 440,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 19744,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "MALCESINE",
+        "cod": 450,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2637,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "MARANO DI VALPOLICELLA",
+        "cod": 460,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2581,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "MEZZANE DI SOTTO",
+        "cod": 470,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2013,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "MINERBE",
+        "cod": 480,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 3516,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "MONTECCHIA DI CROSARA",
+        "cod": 490,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 3278,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "MONTEFORTE D'ALPONE",
+        "cod": 500,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 6380,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "MOZZECANE",
+        "cod": 510,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 5813,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "NEGRAR DI VALPOLICELLA",
+        "cod": 520,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 13193,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "NOGARA",
+        "cod": 530,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 5970,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "NOGAROLE ROCCA",
+        "cod": 540,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2508,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "OPPEANO",
+        "cod": 550,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 7382,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "PALU'",
+        "cod": 551,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 848,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "PASTRENGO",
+        "cod": 560,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2368,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "PESCANTINA",
+        "cod": 570,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 13976,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "PESCHIERA DEL GARDA",
+        "cod": 580,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 8297,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "POVEGLIANO VERONESE",
+        "cod": 590,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 5709,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "PRESSANA",
+        "cod": 600,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1865,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "RIVOLI VERONESE",
+        "cod": 610,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2001,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "RONCA'",
+        "cod": 620,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2876,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "RONCO ALL'ADIGE",
+        "cod": 630,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 4592,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "ROVERCHIARA",
+        "cod": 640,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1875,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "ROVERE' VERONESE",
+        "cod": 660,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1700,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "ROVEREDO DI GUA'",
+        "cod": 650,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1189,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "SALIZZOLE",
+        "cod": 670,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2854,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "SAN BONIFACIO",
+        "cod": 680,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 14965,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "SAN GIOVANNI ILARIONE",
+        "cod": 690,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 3806,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "SAN GIOVANNI LUPATOTO",
+        "cod": 700,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 19210,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "SAN MARTINO BUON ALBERGO",
+        "cod": 720,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 12185,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "SAN MAURO DI SALINE",
+        "cod": 730,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 478,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "SAN PIETRO DI MORUBIO",
+        "cod": 740,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2300,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "SAN PIETRO IN CARIANO",
+        "cod": 750,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 10599,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "SAN ZENO DI MONTAGNA",
+        "cod": 780,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1152,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "SANGUINETTO",
+        "cod": 710,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 3017,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "SANT'AMBROGIO DI VALPOLICELLA",
+        "cod": 760,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 9140,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "SANT'ANNA D'ALFAEDO",
+        "cod": 770,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2058,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "SELVA DI PROGNO",
+        "cod": 790,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 762,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "SOAVE",
+        "cod": 800,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 5611,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "SOMMACAMPAGNA",
+        "cod": 810,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 11286,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "SONA",
+        "cod": 820,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 13701,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "SORGA'",
+        "cod": 830,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2069,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "TERRAZZO",
+        "cod": 840,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1586,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "TORRI DEL BENACO",
+        "cod": 850,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2152,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "TREGNAGO",
+        "cod": 860,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 3957,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "TREVENZUOLO",
+        "cod": 870,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1937,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "VALEGGIO SUL MINCIO",
+        "cod": 880,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 11864,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "VELO VERONESE",
+        "cod": 890,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 641,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "VERONA",
+        "cod": 900,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 190689,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "VERONELLA",
+        "cod": 910,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 3774,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "VESTENANOVA",
+        "cod": 920,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1965,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "VIGASIO",
+        "cod": 930,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 7718,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "VILLA BARTOLOMEA",
+        "cod": 940,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 4525,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "VILLAFRANCA DI VERONA",
+        "cod": 950,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 25228,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "ZEVIO",
+        "cod": 960,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 11932,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "ZIMELLA",
+        "cod": 970,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 3560,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      }
+    ]
+  }
+}

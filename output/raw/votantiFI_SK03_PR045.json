@@ -1,0 +1,664 @@
+{
+  "int": null,
+  "note": null,
+  "scheda": null,
+  "enti": {
+    "ente_p": {
+      "desc": "MANTOVA",
+      "cod": 45,
+      "ele_m": 0,
+      "ele_f": 0,
+      "ele_t": 302568,
+      "com": [
+        {
+          "cod_reg": 3,
+          "com_att": 3,
+          "num_com": 4
+        }
+      ],
+      "com_vot": null
+    },
+    "enti_f": [
+      {
+        "tipo": "COMUNE",
+        "desc": "ACQUANEGRA SUL CHIESE",
+        "cod": 10,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2091,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "ASOLA",
+        "cod": 20,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 7527,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "BAGNOLO SAN VITO",
+        "cod": 30,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 4534,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "BORGO MANTOVANO",
+        "cod": 48,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 4169,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "BORGO VIRGILIO",
+        "cod": 65,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 11144,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "BORGOCARBONARA",
+        "cod": 55,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1398,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "BOZZOLO",
+        "cod": 70,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2980,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "CANNETO SULL'OGLIO",
+        "cod": 80,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 3103,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "CASALMORO",
+        "cod": 100,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1545,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "CASALOLDO",
+        "cod": 110,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1842,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "CASALROMANO",
+        "cod": 120,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1097,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "CASTEL D'ARIO",
+        "cod": 140,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 3292,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "CASTEL GOFFREDO",
+        "cod": 150,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 8781,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "CASTELBELFORTE",
+        "cod": 130,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2328,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "CASTELLUCCHIO",
+        "cod": 160,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 3822,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "CASTIGLIONE DELLE STIVIERE",
+        "cod": 170,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 16364,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "CAVRIANA",
+        "cod": 180,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2928,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "CERESARA",
+        "cod": 190,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1930,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "COMMESSAGGIO",
+        "cod": 200,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 816,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "CURTATONE",
+        "cod": 210,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 11898,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "DOSOLO",
+        "cod": 220,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2494,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "GAZOLDO DEGLI IPPOLITI",
+        "cod": 240,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2102,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "GAZZUOLO",
+        "cod": 250,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1563,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "GOITO",
+        "cod": 260,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 7428,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "GONZAGA",
+        "cod": 270,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 6469,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "GUIDIZZOLO",
+        "cod": 280,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 4209,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "MAGNACAVALLO",
+        "cod": 290,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1046,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "MANTOVA",
+        "cod": 300,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 36342,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "MARCARIA",
+        "cod": 310,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 4934,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "MARIANA MANTOVANA",
+        "cod": 320,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 529,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "MARMIROLO",
+        "cod": 330,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 5849,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "MEDOLE",
+        "cod": 340,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2977,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "MOGLIA",
+        "cod": 350,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 4159,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "MONZAMBANO",
+        "cod": 360,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 3674,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "MOTTEGGIANA",
+        "cod": 370,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1768,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "OSTIGLIA",
+        "cod": 380,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 4632,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "PEGOGNAGA",
+        "cod": 390,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 5289,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "PIUBEGA",
+        "cod": 410,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1320,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "POGGIO RUSCO",
+        "cod": 420,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 4654,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "POMPONESCO",
+        "cod": 430,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1332,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "PONTI SUL MINCIO",
+        "cod": 440,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1778,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "PORTO MANTOVANO",
+        "cod": 450,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 13027,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "QUINGENTOLE",
+        "cod": 460,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 791,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "QUISTELLO",
+        "cod": 470,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 4103,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "REDONDESCO",
+        "cod": 480,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 915,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "RIVAROLO MANTOVANO",
+        "cod": 500,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1802,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "RODIGO",
+        "cod": 510,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 3946,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "RONCOFERRARO",
+        "cod": 520,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 5342,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "ROVERBELLA",
+        "cod": 530,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 6302,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "SABBIONETA",
+        "cod": 540,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 3235,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "SAN BENEDETTO PO",
+        "cod": 550,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 5317,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "SAN GIACOMO DELLE SEGNATE",
+        "cod": 560,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1138,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "SAN GIORGIO BIGARELLO",
+        "cod": 570,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 9362,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "SAN GIOVANNI DEL DOSSO",
+        "cod": 580,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 901,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "SAN MARTINO DALL'ARGINE",
+        "cod": 590,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1305,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "SCHIVENOGLIA",
+        "cod": 600,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 831,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "SERMIDE E FELONICA",
+        "cod": 610,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 5113,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "SERRAVALLE A PO",
+        "cod": 620,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1094,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "SOLFERINO",
+        "cod": 630,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2076,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "SUSTINENTE",
+        "cod": 640,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1574,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "SUZZARA",
+        "cod": 650,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 15048,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "VIADANA",
+        "cod": 660,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 13915,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "VILLIMPENTA",
+        "cod": 680,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1488,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "VOLTA MANTOVANA",
+        "cod": 700,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 5806,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,4040 @@
+{
+  "int": {
+    "st": "ESERCIZIO",
+    "c_ele": 9,
+    "t_ele": "Referendum",
+    "f_elet": "VOTANTI",
+    "dt_ele": 20260322000000,
+    "l_terr": "PROVINCIA",
+    "area": "I",
+    "dt_agg": 20260323001954
+  },
+  "note": null,
+  "scheda": [
+    {
+      "cod": 1,
+      "desc": null
+    }
+  ],
+  "enti": {
+    "ente_p": {
+      "desc": "GENOVA",
+      "cod": 34,
+      "ele_m": 0,
+      "ele_f": 0,
+      "ele_t": 641840,
+      "com": [
+        {
+          "cod_reg": 7,
+          "com_att": 3,
+          "num_com": 4
+        }
+      ],
+      "com_vot": [
+        {
+          "com": 1,
+          "dt_com": 20260322120000,
+          "scheda": 1,
+          "enti_p": 964,
+          "enti_t": 964,
+          "perc": "18,41",
+          "vot_m": 0,
+          "vot_f": 0,
+          "vot_t": 118162,
+          "perc_r": null
+        },
+        {
+          "com": 2,
+          "dt_com": 20260322190000,
+          "scheda": 1,
+          "enti_p": 964,
+          "enti_t": 964,
+          "perc": "42,88",
+          "vot_m": 0,
+          "vot_f": 0,
+          "vot_t": 275253,
+          "perc_r": null
+        },
+        {
+          "com": 3,
+          "dt_com": 20260322230000,
+          "scheda": 1,
+          "enti_p": 964,
+          "enti_t": 964,
+          "perc": "49,50",
+          "vot_m": 0,
+          "vot_f": 0,
+          "vot_t": 317692,
+          "perc_r": null
+        },
+        {
+          "com": 4,
+          "dt_com": 20260323150000,
+          "scheda": 1,
+          "enti_p": 0,
+          "enti_t": 964,
+          "perc": "0",
+          "vot_m": 0,
+          "vot_f": 0,
+          "vot_t": 0,
+          "perc_r": null
+        }
+      ]
+    },
+    "enti_f": [
+      {
+        "tipo": "COMUNE",
+        "desc": "ARENZANO",
+        "cod": 10,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 9386,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 10,
+            "enti_t": 10,
+            "perc": "22,18",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 2082,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 10,
+            "enti_t": 10,
+            "perc": "48,86",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 4586,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 10,
+            "enti_t": 10,
+            "perc": "55,63",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 5221,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 10,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "AVEGNO",
+        "cod": 20,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2091,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 3,
+            "enti_t": 3,
+            "perc": "16,45",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 344,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 3,
+            "enti_t": 3,
+            "perc": "40,08",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 838,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 3,
+            "enti_t": 3,
+            "perc": "48,16",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 1007,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 3,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "BARGAGLI",
+        "cod": 30,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2084,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 4,
+            "enti_t": 4,
+            "perc": "15,12",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 315,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 4,
+            "enti_t": 4,
+            "perc": "36,13",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 753,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 4,
+            "enti_t": 4,
+            "perc": "40,98",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 854,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 4,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "BOGLIASCO",
+        "cod": 40,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 3521,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 4,
+            "enti_t": 4,
+            "perc": "21,78",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 767,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 4,
+            "enti_t": 4,
+            "perc": "46,01",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 1620,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 4,
+            "enti_t": 4,
+            "perc": "53,45",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 1882,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 4,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "BORZONASCA",
+        "cod": 50,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1482,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 3,
+            "enti_t": 3,
+            "perc": "10,59",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 157,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 3,
+            "enti_t": 3,
+            "perc": "27,46",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 407,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 3,
+            "enti_t": 3,
+            "perc": "31,78",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 471,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 3,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "BUSALLA",
+        "cod": 60,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 4158,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 7,
+            "enti_t": 7,
+            "perc": "18,13",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 754,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 7,
+            "enti_t": 7,
+            "perc": "39,95",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 1661,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 7,
+            "enti_t": 7,
+            "perc": "46,39",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 1929,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 7,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "CAMOGLI",
+        "cod": 70,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 4101,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 7,
+            "enti_t": 7,
+            "perc": "21,31",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 874,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 7,
+            "enti_t": 7,
+            "perc": "47,38",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 1943,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 7,
+            "enti_t": 7,
+            "perc": "53,62",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 2199,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 7,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "CAMPO LIGURE",
+        "cod": 80,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2259,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 3,
+            "enti_t": 3,
+            "perc": "16,47",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 372,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 3,
+            "enti_t": 3,
+            "perc": "46,75",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 1056,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 3,
+            "enti_t": 3,
+            "perc": "54,58",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 1233,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 3,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "CAMPOMORONE",
+        "cod": 90,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 5412,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 9,
+            "enti_t": 9,
+            "perc": "18,29",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 990,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 9,
+            "enti_t": 9,
+            "perc": "43,90",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 2376,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 9,
+            "enti_t": 9,
+            "perc": "52,01",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 2815,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 9,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "CARASCO",
+        "cod": 100,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2884,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 4,
+            "enti_t": 4,
+            "perc": "15,98",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 461,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 4,
+            "enti_t": 4,
+            "perc": "37,52",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 1082,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 4,
+            "enti_t": 4,
+            "perc": "43,83",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 1264,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 4,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "CASARZA LIGURE",
+        "cod": 110,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 5367,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 6,
+            "enti_t": 6,
+            "perc": "15,58",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 836,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 6,
+            "enti_t": 6,
+            "perc": "40,17",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 2156,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 6,
+            "enti_t": 6,
+            "perc": "47,12",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 2529,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 6,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "CASELLA",
+        "cod": 120,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2552,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 3,
+            "enti_t": 3,
+            "perc": "18,77",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 479,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 3,
+            "enti_t": 3,
+            "perc": "42,79",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 1092,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 3,
+            "enti_t": 3,
+            "perc": "49,14",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 1254,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 3,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "CASTIGLIONE CHIAVARESE",
+        "cod": 130,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1250,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 2,
+            "enti_t": 2,
+            "perc": "12,88",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 161,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 2,
+            "enti_t": 2,
+            "perc": "36,16",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 452,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 2,
+            "enti_t": 2,
+            "perc": "42,08",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 526,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 2,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "CERANESI",
+        "cod": 140,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2987,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 6,
+            "enti_t": 6,
+            "perc": "16,61",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 496,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 6,
+            "enti_t": 6,
+            "perc": "42,52",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 1270,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 6,
+            "enti_t": 6,
+            "perc": "49,41",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 1476,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 6,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "CHIAVARI",
+        "cod": 150,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 21890,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 29,
+            "enti_t": 29,
+            "perc": "19,75",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 4324,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 29,
+            "enti_t": 29,
+            "perc": "44,87",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 9822,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 29,
+            "enti_t": 29,
+            "perc": "51,66",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 11309,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 29,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "CICAGNA",
+        "cod": 160,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1826,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 2,
+            "enti_t": 2,
+            "perc": "13,75",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 251,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 2,
+            "enti_t": 2,
+            "perc": "36,64",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 669,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 2,
+            "enti_t": 2,
+            "perc": "41,02",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 749,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 2,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "COGOLETO",
+        "cod": 170,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 7052,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 10,
+            "enti_t": 10,
+            "perc": "20,11",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 1418,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 10,
+            "enti_t": 10,
+            "perc": "48,47",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 3418,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 10,
+            "enti_t": 10,
+            "perc": "55,52",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 3915,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 10,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "COGORNO",
+        "cod": 180,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 4600,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 5,
+            "enti_t": 5,
+            "perc": "17,04",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 784,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 5,
+            "enti_t": 5,
+            "perc": "42,04",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 1934,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 5,
+            "enti_t": 5,
+            "perc": "48,41",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 2227,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 5,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "COREGLIA LIGURE",
+        "cod": 190,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 208,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "11,54",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 24,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "38,46",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 80,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "48,56",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 101,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 1,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "CROCEFIESCHI",
+        "cod": 200,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 468,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "27,35",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 128,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "48,72",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 228,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "54,91",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 257,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 1,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "DAVAGNA",
+        "cod": 210,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1502,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 2,
+            "enti_t": 2,
+            "perc": "17,58",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 264,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 2,
+            "enti_t": 2,
+            "perc": "37,95",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 570,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 2,
+            "enti_t": 2,
+            "perc": "44,94",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 675,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 2,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "FASCIA",
+        "cod": 220,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 62,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "14,52",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 9,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "41,94",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 26,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "50,00",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 31,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 1,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "FAVALE DI MALVARO",
+        "cod": 230,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 344,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "11,34",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 39,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "31,40",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 108,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "38,37",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 132,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 1,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "FONTANIGORDA",
+        "cod": 240,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 192,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "17,71",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 34,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "39,58",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 76,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "39,58",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 76,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 1,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "GENOVA",
+        "cod": 250,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 434182,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 653,
+            "enti_t": 653,
+            "perc": "18,48",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 80230,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 653,
+            "enti_t": 653,
+            "perc": "43,02",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 186773,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 653,
+            "enti_t": 653,
+            "perc": "49,72",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 215858,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 653,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "GORRETO",
+        "cod": 260,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 77,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "18,18",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 14,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "42,86",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 33,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "50,65",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 39,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 1,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "ISOLA DEL CANTONE",
+        "cod": 270,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1105,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 2,
+            "enti_t": 2,
+            "perc": "15,93",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 176,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 2,
+            "enti_t": 2,
+            "perc": "36,83",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 407,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 2,
+            "enti_t": 2,
+            "perc": "42,99",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 475,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 2,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "LAVAGNA",
+        "cod": 280,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 10167,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 11,
+            "enti_t": 11,
+            "perc": "19,62",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 1995,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 11,
+            "enti_t": 11,
+            "perc": "43,49",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 4422,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 11,
+            "enti_t": 11,
+            "perc": "49,63",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 5046,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 11,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "LEIVI",
+        "cod": 290,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2076,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 2,
+            "enti_t": 2,
+            "perc": "15,75",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 327,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 2,
+            "enti_t": 2,
+            "perc": "40,41",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 839,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 2,
+            "enti_t": 2,
+            "perc": "48,31",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 1003,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 2,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "LORSICA",
+        "cod": 300,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 343,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "11,08",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 38,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "32,07",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 110,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "37,90",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 130,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 1,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "LUMARZO",
+        "cod": 310,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1235,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 2,
+            "enti_t": 2,
+            "perc": "16,60",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 205,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 2,
+            "enti_t": 2,
+            "perc": "36,68",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 453,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 2,
+            "enti_t": 2,
+            "perc": "42,27",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 522,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 2,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "MASONE",
+        "cod": 320,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2803,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 4,
+            "enti_t": 4,
+            "perc": "16,59",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 465,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 4,
+            "enti_t": 4,
+            "perc": "46,91",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 1315,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 4,
+            "enti_t": 4,
+            "perc": "55,37",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 1552,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 4,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "MELE",
+        "cod": 330,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2079,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 3,
+            "enti_t": 3,
+            "perc": "17,36",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 361,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 3,
+            "enti_t": 3,
+            "perc": "44,93",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 934,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 3,
+            "enti_t": 3,
+            "perc": "51,61",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 1073,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 3,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "MEZZANEGO",
+        "cod": 340,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1192,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 2,
+            "enti_t": 2,
+            "perc": "12,58",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 150,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 2,
+            "enti_t": 2,
+            "perc": "33,31",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 397,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 2,
+            "enti_t": 2,
+            "perc": "39,43",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 470,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 2,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "MIGNANEGO",
+        "cod": 350,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2882,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 4,
+            "enti_t": 4,
+            "perc": "17,21",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 496,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 4,
+            "enti_t": 4,
+            "perc": "39,17",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 1129,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 4,
+            "enti_t": 4,
+            "perc": "46,81",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 1349,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 4,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "MOCONESI",
+        "cod": 360,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1933,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 3,
+            "enti_t": 3,
+            "perc": "13,35",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 258,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 3,
+            "enti_t": 3,
+            "perc": "32,95",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 637,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 3,
+            "enti_t": 3,
+            "perc": "38,18",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 738,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 3,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "MONEGLIA",
+        "cod": 370,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2084,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 3,
+            "enti_t": 3,
+            "perc": "21,74",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 453,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 3,
+            "enti_t": 3,
+            "perc": "43,71",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 911,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 3,
+            "enti_t": 3,
+            "perc": "49,23",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 1026,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 3,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "MONTEBRUNO",
+        "cod": 380,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 171,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "15,79",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 27,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "26,32",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 45,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "32,75",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 56,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 1,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "MONTOGGIO",
+        "cod": 390,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1709,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 2,
+            "enti_t": 2,
+            "perc": "17,20",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 294,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 2,
+            "enti_t": 2,
+            "perc": "37,27",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 637,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 2,
+            "enti_t": 2,
+            "perc": "43,65",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 746,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 2,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "NE",
+        "cod": 400,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1721,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 5,
+            "enti_t": 5,
+            "perc": "11,56",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 199,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 5,
+            "enti_t": 5,
+            "perc": "31,55",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 543,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 5,
+            "enti_t": 5,
+            "perc": "37,30",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 642,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 5,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "NEIRONE",
+        "cod": 410,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 765,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 2,
+            "enti_t": 2,
+            "perc": "15,56",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 119,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 2,
+            "enti_t": 2,
+            "perc": "34,38",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 263,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 2,
+            "enti_t": 2,
+            "perc": "37,65",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 288,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 2,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "ORERO",
+        "cod": 420,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 433,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "15,70",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 68,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "34,87",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 151,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "41,11",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 178,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 1,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "PIEVE LIGURE",
+        "cod": 430,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1985,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 3,
+            "enti_t": 3,
+            "perc": "19,19",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 381,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 3,
+            "enti_t": 3,
+            "perc": "45,94",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 912,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 3,
+            "enti_t": 3,
+            "perc": "54,86",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 1089,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 3,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "PORTOFINO",
+        "cod": 440,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 305,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "17,38",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 53,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "39,34",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 120,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "44,26",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 135,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 1,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "PROPATA",
+        "cod": 450,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 106,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "17,92",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 19,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "33,02",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 35,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "37,74",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 40,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 1,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "RAPALLO",
+        "cod": 460,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 22848,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 32,
+            "enti_t": 32,
+            "perc": "18,18",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 4154,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 32,
+            "enti_t": 32,
+            "perc": "40,95",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 9356,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 32,
+            "enti_t": 32,
+            "perc": "46,17",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 10550,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 32,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "RECCO",
+        "cod": 470,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 7777,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 10,
+            "enti_t": 10,
+            "perc": "19,83",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 1542,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 10,
+            "enti_t": 10,
+            "perc": "45,63",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 3549,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 10,
+            "enti_t": 10,
+            "perc": "52,55",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 4087,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 10,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "REZZOAGLIO",
+        "cod": 480,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 733,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 3,
+            "enti_t": 3,
+            "perc": "12,28",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 90,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 3,
+            "enti_t": 3,
+            "perc": "31,65",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 232,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 3,
+            "enti_t": 3,
+            "perc": "35,47",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 260,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 3,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "RONCO SCRIVIA",
+        "cod": 490,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 3200,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 4,
+            "enti_t": 4,
+            "perc": "20,16",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 645,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 4,
+            "enti_t": 4,
+            "perc": "42,59",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 1363,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 4,
+            "enti_t": 4,
+            "perc": "48,66",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 1557,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 4,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "RONDANINA",
+        "cod": 500,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 51,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "11,76",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 6,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "43,14",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 22,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "45,10",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 23,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 1,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "ROSSIGLIONE",
+        "cod": 510,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2019,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 3,
+            "enti_t": 3,
+            "perc": "18,23",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 368,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 3,
+            "enti_t": 3,
+            "perc": "45,96",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 928,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 3,
+            "enti_t": 3,
+            "perc": "53,29",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 1076,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 3,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "ROVEGNO",
+        "cod": 520,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 361,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "24,38",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 88,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "45,15",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 163,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "48,48",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 175,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 1,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "SAN COLOMBANO CERTENOLI",
+        "cod": 530,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2139,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 3,
+            "enti_t": 3,
+            "perc": "14,31",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 306,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 3,
+            "enti_t": 3,
+            "perc": "34,46",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 737,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 3,
+            "enti_t": 3,
+            "perc": "41,14",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 880,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 3,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "SANT'OLCESE",
+        "cod": 550,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 4655,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 9,
+            "enti_t": 9,
+            "perc": "16,86",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 785,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 9,
+            "enti_t": 9,
+            "perc": "44,30",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 2062,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 9,
+            "enti_t": 9,
+            "perc": "53,43",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 2487,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 9,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "SANTA MARGHERITA LIGURE",
+        "cod": 540,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 6823,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 11,
+            "enti_t": 11,
+            "perc": "19,13",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 1305,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 11,
+            "enti_t": 11,
+            "perc": "43,72",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 2983,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 11,
+            "enti_t": 11,
+            "perc": "48,19",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 3288,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 11,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "SANTO STEFANO D'AVETO",
+        "cod": 560,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 869,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 2,
+            "enti_t": 2,
+            "perc": "17,61",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 153,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 2,
+            "enti_t": 2,
+            "perc": "37,97",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 330,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 2,
+            "enti_t": 2,
+            "perc": "40,97",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 356,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 2,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "SAVIGNONE",
+        "cod": 570,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2507,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 5,
+            "enti_t": 5,
+            "perc": "16,43",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 412,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 5,
+            "enti_t": 5,
+            "perc": "41,16",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 1032,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 5,
+            "enti_t": 5,
+            "perc": "47,39",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 1188,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 5,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "SERRA RICCO'",
+        "cod": 580,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 6259,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 8,
+            "enti_t": 8,
+            "perc": "18,33",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 1147,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 8,
+            "enti_t": 8,
+            "perc": "43,52",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 2724,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 8,
+            "enti_t": 8,
+            "perc": "49,83",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 3119,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 8,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "SESTRI LEVANTE",
+        "cod": 590,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 13722,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 23,
+            "enti_t": 23,
+            "perc": "17,64",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 2421,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 23,
+            "enti_t": 23,
+            "perc": "44,65",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 6127,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 23,
+            "enti_t": 23,
+            "perc": "51,71",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 7096,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 23,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "SORI",
+        "cod": 600,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 3253,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 4,
+            "enti_t": 4,
+            "perc": "22,35",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 727,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 4,
+            "enti_t": 4,
+            "perc": "44,70",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 1454,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 4,
+            "enti_t": 4,
+            "perc": "50,20",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 1633,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 4,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "TIGLIETO",
+        "cod": 610,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 424,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 2,
+            "enti_t": 2,
+            "perc": "23,82",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 101,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 2,
+            "enti_t": 2,
+            "perc": "41,27",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 175,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 2,
+            "enti_t": 2,
+            "perc": "46,93",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 199,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 2,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "TORRIGLIA",
+        "cod": 620,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1931,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 3,
+            "enti_t": 3,
+            "perc": "16,99",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 328,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 3,
+            "enti_t": 3,
+            "perc": "36,51",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 705,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 3,
+            "enti_t": 3,
+            "perc": "41,69",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 805,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 3,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "TRIBOGNA",
+        "cod": 630,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 492,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "11,99",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 59,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "30,49",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 150,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "37,60",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 185,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 1,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "USCIO",
+        "cod": 640,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1743,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 2,
+            "enti_t": 2,
+            "perc": "16,01",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 279,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 2,
+            "enti_t": 2,
+            "perc": "37,41",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 652,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 2,
+            "enti_t": 2,
+            "perc": "43,09",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 751,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 2,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "VALBREVENNA",
+        "cod": 650,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 675,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "16,89",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 114,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "38,96",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 263,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "44,59",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 301,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 1,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "VOBBIA",
+        "cod": 660,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 342,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "15,20",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 52,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "32,16",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 110,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 1,
+            "enti_t": 1,
+            "perc": "39,77",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 136,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 1,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "ZOAGLI",
+        "cod": 670,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 1986,
+        "tipo_tras": "SZ",
+        "com_vot": [
+          {
+            "com": 1,
+            "dt_com": 20260322120000,
+            "scheda": 1,
+            "enti_p": 4,
+            "enti_t": 4,
+            "perc": "19,59",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 389,
+            "perc_r": null
+          },
+          {
+            "com": 2,
+            "dt_com": 20260322190000,
+            "scheda": 1,
+            "enti_p": 4,
+            "enti_t": 4,
+            "perc": "42,65",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 847,
+            "perc_r": null
+          },
+          {
+            "com": 3,
+            "dt_com": 20260322230000,
+            "scheda": 1,
+            "enti_p": 4,
+            "enti_t": 4,
+            "perc": "47,99",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 953,
+            "perc_r": null
+          },
+          {
+            "com": 4,
+            "dt_com": 20260323150000,
+            "scheda": 1,
+            "enti_p": 0,
+            "enti_t": 4,
+            "perc": "0",
+            "vot_m": 0,
+            "vot_f": 0,
+            "vot_t": 0,
+            "perc_r": null
+          }
+        ]
+      }
+    ]
+  }
+}

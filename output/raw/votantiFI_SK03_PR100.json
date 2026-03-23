@@ -1,0 +1,94 @@
+{
+  "int": null,
+  "note": null,
+  "scheda": null,
+  "enti": {
+    "ente_p": {
+      "desc": "PRATO",
+      "cod": 100,
+      "ele_m": 0,
+      "ele_f": 0,
+      "ele_t": 173714,
+      "com": [
+        {
+          "cod_reg": 9,
+          "com_att": 3,
+          "num_com": 4
+        }
+      ],
+      "com_vot": null
+    },
+    "enti_f": [
+      {
+        "tipo": "COMUNE",
+        "desc": "CANTAGALLO",
+        "cod": 10,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 2484,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "CARMIGNANO",
+        "cod": 20,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 10995,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "MONTEMURLO",
+        "cod": 30,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 13871,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "POGGIO A CAIANO",
+        "cod": 40,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 7196,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "PRATO",
+        "cod": 50,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 126203,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "VAIANO",
+        "cod": 60,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 8068,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      },
+      {
+        "tipo": "COMUNE",
+        "desc": "VERNIO",
+        "cod": 70,
+        "ele_m": 0,
+        "ele_f": 0,
+        "ele_t": 4897,
+        "tipo_tras": "SZ",
+        "com_vot": null
+      }
+    ]
+  }
+}
