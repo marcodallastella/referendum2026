@@ -256,6 +256,13 @@ def load_csv(csv_path: str) -> pd.DataFrame:
     print(f"  Loading {csv_path} ...")
     df = pd.read_csv(csv_path, low_memory=False)
 
+
+    # Around line 258 in prepare_site.py
+    df = pd.read_csv(args.csv)
+    # ADD THIS LINE TO MERGE THE ROWS:
+    df = df.groupby('cm_code').first().reset_index()
+
+
     # Use only quesito == 1 to avoid duplicates
     df = df[df["quesito"] == 1].copy()
     print(f"  Filtered to quesito 1: {len(df)} rows")
