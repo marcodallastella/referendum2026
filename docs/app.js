@@ -22,12 +22,13 @@ const AFFLUENZA_COLORS = [
     '#6baed6', '#4292c6', '#2171b5', '#08519c', '#08306b'
 ];
 
-// Risultati: red (No) → white (50%) → green (Sì)
+// Risultati: RdBu diverging scale (colorblind-safe: red=No, blue=Sì).
+// Avoids red/green which is indistinguishable for ~8% of male users (deuteranopia).
 const RISULTATI_BREAKS = [0, 20, 35, 45, 50, 55, 65, 80, 100];
 const RISULTATI_COLORS = [
-    '#c62828', '#e57373', '#ffcdd2', '#fff9c4',
-    '#f5f5f5',
-    '#c8e6c9', '#66bb6a', '#2e7d32', '#1b5e20'
+    '#b2182b', '#d6604d', '#f4a582', '#fddbc7',
+    '#f7f7f7',
+    '#d1e5f0', '#92c5de', '#4393c3', '#2166ac'
 ];
 
 // MapLibre step expressions for fill-color
@@ -69,6 +70,20 @@ function risultatiFillExpression() {
             100, RISULTATI_COLORS[8]
         ]
     ];
+}
+
+// ---------------------------------------------------------------------------
+// Security: HTML escaping for API-sourced strings inserted into innerHTML
+// ---------------------------------------------------------------------------
+
+function escapeHtml(s) {
+    if (s == null) return '';
+    return String(s)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
 }
 
 // ---------------------------------------------------------------------------
@@ -140,6 +155,8 @@ async function loadData() {
             fetch('data/national.json'),
             fetch('data/regions.json'),
         ]);
+        if (!natResp.ok) throw new Error('national.json: HTTP ' + natResp.status);
+        if (!regResp.ok) throw new Error('regions.json: HTTP ' + regResp.status);
         nationalData = await natResp.json();
         regionsData = await regResp.json();
 
@@ -149,7 +166,7 @@ async function loadData() {
     } catch (e) {
         console.error('Failed to load data:', e);
         document.getElementById('summary').innerHTML =
-            '<p style="padding:2rem;color:#c0392b;">Errore nel caricamento dei dati.</p>';
+            '<p style="padding:2rem;color:#c0392b;">Errore nel caricamento dei dati. Riprova più tardi.</p>';
     }
 }
 
@@ -215,13 +232,22 @@ function updateSummaryPanel() {
         'Affluenza: ' + fmtPerc(d.affluenza.best_perc) +
         ' (' + fmtNum(d.affluenza.best_votanti) + ' su ' + fmtNum(d.elettori) + ')';
 
-    // Last update timestamp
-    const now = new Date();
-    const ts = now.toLocaleString('it-IT', {
-        day: 'numeric', month: 'long', year: 'numeric',
-        hour: '2-digit', minute: '2-digit'
-    });
-    document.getElementById('last-update').textContent = 'Ultimo aggiornamento: ' + ts;
+    // Last update timestamp: use actual data scrape time from national.json, not browser time
+    const updateEl = document.getElementById('last-update');
+    if (d.fetched_at) {
+        try {
+            const ts = new Date(d.fetched_at).toLocaleString('it-IT', {
+                day: 'numeric', month: 'long', year: 'numeric',
+                hour: '2-digit', minute: '2-digit',
+                timeZone: 'Europe/Rome',
+            });
+            updateEl.textContent = 'Dati aggiornati: ' + ts;
+        } catch (_) {
+            updateEl.textContent = 'Dati aggiornati: ' + d.fetched_at;
+        }
+    } else {
+        updateEl.textContent = '';
+    }
 }
 
 // ---------------------------------------------------------------------------
@@ -231,8 +257,12 @@ function updateSummaryPanel() {
 function setMode(mode) {
     currentMode = mode;
 
-    document.getElementById('btn-affluenza').classList.toggle('active', mode === 'affluenza');
-    document.getElementById('btn-risultati').classList.toggle('active', mode === 'risultati');
+    const btnAff = document.getElementById('btn-affluenza');
+    const btnRis = document.getElementById('btn-risultati');
+    btnAff.classList.toggle('active', mode === 'affluenza');
+    btnRis.classList.toggle('active', mode === 'risultati');
+    btnAff.setAttribute('aria-pressed', mode === 'affluenza' ? 'true' : 'false');
+    btnRis.setAttribute('aria-pressed', mode === 'risultati' ? 'true' : 'false');
 
     document.getElementById('summary-affluenza').style.display = mode === 'affluenza' ? '' : 'none';
     document.getElementById('summary-risultati').style.display = mode === 'risultati' ? '' : 'none';
@@ -257,8 +287,9 @@ function updateChoroplethColors() {
 }
 
 function buildPopupHTML(p) {
-    let html = '<div class="popup-title">' + (p.comune || '') + '</div>';
-    html += '<div class="popup-subtitle">' + (p.provincia || '') + ' \u2014 ' + (p.regione || '') + '</div>';
+    // escapeHtml() prevents XSS from API-sourced strings (municipality/province names)
+    let html = '<div class="popup-title">' + escapeHtml(p.comune) + '</div>';
+    html += '<div class="popup-subtitle">' + escapeHtml(p.provincia) + ' \u2014 ' + escapeHtml(p.regione) + '</div>';
 
     if (p.elettori) {
         html += '<div class="popup-row"><span>Elettori</span><span class="popup-val">' + fmtNum(p.elettori) + '</span></div>';
@@ -303,6 +334,10 @@ async function loadMap() {
 
     map.addControl(new maplibregl.NavigationControl(), 'top-right');
 
+    map.on('error', function (e) {
+        console.error('Map error:', e.error);
+    });
+
     map.on('load', async function () {
         try {
             // Find the first symbol (label) layer in the basemap style
@@ -318,6 +353,7 @@ async function loadMap() {
 
             // Load GeoJSON
             var resp = await fetch('data/italy.geojson');
+            if (!resp.ok) throw new Error('italy.geojson: HTTP ' + resp.status);
             var geojson = await resp.json();
 
             // Add source with generateId for hover state management

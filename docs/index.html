@@ -46,9 +46,9 @@
             <h1>Referendum Costituzionale 2026</h1>
             <p class="subtitle">Riforma della giustizia &mdash; 22-23 marzo 2026</p>
         </div>
-        <nav class="toggle-container">
-            <button id="btn-affluenza" class="toggle-btn" onclick="setMode('affluenza')">Affluenza</button>
-            <button id="btn-risultati" class="toggle-btn active" onclick="setMode('risultati')">Risultati</button>
+        <nav class="toggle-container" aria-label="Modalità visualizzazione">
+            <button id="btn-affluenza" class="toggle-btn" onclick="setMode('affluenza')" aria-pressed="false">Affluenza</button>
+            <button id="btn-risultati" class="toggle-btn active" onclick="setMode('risultati')" aria-pressed="true">Risultati</button>
         </nav>
     </div>
     <div class="header-rule"></div>
@@ -91,7 +91,7 @@
     <section class="regions-section">
         <h2>Dettaglio regionale</h2>
         <div class="table-wrapper">
-            <table id="regions-table">
+            <table id="regions-table" aria-label="Risultati per regione">
                 <thead>
                     <tr id="regions-thead-row"></tr>
                 </thead>
@@ -112,7 +112,8 @@
         <h2>Informazioni</h2>
         <div class="info-content">
             <p>Questo sito &egrave; stato creato da <strong>Marco Dalla Stella</strong>, giornalista, per rendere accessibili i risultati del referendum costituzionale 2026.</p>
-            <p>I dati provengono dal <strong>Ministero dell'Interno</strong> e vengono elaborati automaticamente: il sistema scarica i dati ufficiali in formato aperto, li organizza per comune e regione, e li visualizza sulla mappa interattiva e nelle tabelle. Puoi esplorare l'affluenza alle urne e i risultati del voto per ogni area d'Italia.</p>
+            <p>I dati provengono dal portale ufficiale del <strong>Ministero dell'Interno</strong> (elezioni.interno.gov.it) e vengono aggiornati automaticamente durante lo spoglio. I risultati visualizzati sono <strong>provvisori</strong> fino alla certificazione ufficiale.</p>
+            <p>Il referendum &egrave; valido solo se la partecipazione supera il <strong>50% degli aventi diritto al voto</strong> (quorum). Le cinque domande riguardano la riforma dell&rsquo;ordinamento giudiziario (riforma Nordio): separazione delle carriere, riforma del Csm, riforma della magistratura onoraria e norme sul procedimento disciplinare.</p>
             <p>Il sito &egrave; stato realizzato con l'aiuto di <strong>Claude Code</strong>, lo strumento di programmazione di Anthropic. <a href="https://www.buymeacoffee.com/marcodallastella" target="_blank" rel="noopener">Supporta questo progetto &rarr;</a></p>
         </div>
     </div>

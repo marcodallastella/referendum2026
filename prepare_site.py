@@ -446,6 +446,8 @@ def match_data_to_geojson(gdf: "gpd.GeoDataFrame", df: pd.DataFrame) -> dict:
 def compute_national_summary(df: pd.DataFrame) -> dict:
     """Compute national aggregate: affluence time series + results placeholder."""
     elettori = int(df["ele_t"].sum())
+    # Use the most recent scrape timestamp from the data for UI display
+    fetched_at = str(df["fetched_at"].max()) if "fetched_at" in df.columns else None
     n_comuni = len(df)
 
     snapshots = []
@@ -494,6 +496,7 @@ def compute_national_summary(df: pd.DataFrame) -> dict:
         "title": "Referendum Costituzionale 2026",
         "subtitle": "Riforma della giustizia (Nordio)",
         "date": "22-23 marzo 2026",
+        "fetched_at": fetched_at,
         "n_comuni": n_comuni,
         "elettori": elettori,
         "affluenza": {

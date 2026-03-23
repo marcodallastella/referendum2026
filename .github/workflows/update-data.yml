@@ -51,6 +51,7 @@ jobs:
 
     steps:
       - name: Checkout
+        # TODO(security): pin to SHA, e.g. actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
         uses: actions/checkout@v4
 
       - name: Determine scraping mode
@@ -76,23 +77,25 @@ jobs:
               echo "mode=both" >> "$GITHUB_OUTPUT"
             fi
           fi
-          echo "Scraping mode: $(cat "$GITHUB_OUTPUT" | grep mode | cut -d= -f2)"
+          echo "Scraping mode: $(grep '^mode=' "$GITHUB_OUTPUT" | cut -d= -f2)"
 
       - name: Set up Python
+        # TODO(security): pin to SHA, e.g. actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2b
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
       - name: Cache pip packages
+        # TODO(security): pin to SHA, e.g. actions/cache@1bd1e32a3bdc45362d1e726936510720a7c6158d
         uses: actions/cache@v4
         with:
           path: ~/.cache/pip
-          key: pip-${{ runner.os }}-${{ hashFiles('.github/workflows/update-data.yml') }}
+          key: pip-${{ runner.os }}-${{ hashFiles('requirements.txt') }}
           restore-keys: pip-${{ runner.os }}-
 
       - name: Install dependencies
         run: |
-          pip install httpx pandas openpyxl requests
+          pip install -r requirements.txt
           # Only install geopandas if we need to regenerate boundaries
           if [ "${{ inputs.regenerate_boundaries }}" = "true" ]; then
             pip install geopandas
