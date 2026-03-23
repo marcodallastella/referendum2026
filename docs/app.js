@@ -50,17 +50,17 @@ function getRisultatiColor(percSi) {
 // ---------------------------------------------------------------------------
 
 function fmtNum(n) {
-    if (n == null || isNaN(n)) return '—';
+    if (n == null || isNaN(n)) return '\u2014';
     return n.toLocaleString('it-IT');
 }
 
 function fmtPerc(n) {
-    if (n == null || isNaN(n)) return '—';
+    if (n == null || isNaN(n)) return '\u2014';
     return n.toFixed(1).replace('.', ',') + '%';
 }
 
 function fmtPerc2(n) {
-    if (n == null || isNaN(n)) return '—';
+    if (n == null || isNaN(n)) return '\u2014';
     return n.toFixed(2).replace('.', ',') + '%';
 }
 
@@ -83,7 +83,7 @@ async function loadData() {
     } catch (e) {
         console.error('Failed to load data:', e);
         document.getElementById('summary').innerHTML =
-            '<p style="text-align:center;padding:2rem;color:#c62828;">Errore nel caricamento dei dati. Eseguire prima prepare_site.py.</p>';
+            '<p style="padding:2rem;color:#c0392b;">Errore nel caricamento dei dati.</p>';
     }
 }
 
@@ -100,18 +100,12 @@ function updateSummaryPanel() {
     document.getElementById('nat-affluenza').textContent = fmtPerc(d.affluenza.best_perc);
     document.getElementById('nat-votanti').textContent = fmtNum(d.affluenza.best_votanti);
 
-    // Progression
+    // Progression — compact inline text
     const progEl = document.getElementById('progression');
-    const maxPerc = Math.max(...d.affluenza.snapshots.map(s => s.perc), 1);
-    progEl.innerHTML = d.affluenza.snapshots.map(s => {
-        const h = Math.max(2, (s.perc / maxPerc) * 60);
-        const filled = s.votanti > 0 ? 'filled' : '';
-        return `<div class="prog-step">
-            <div class="prog-bar ${filled}" style="height:${h}px"></div>
-            <div class="prog-perc">${s.votanti > 0 ? fmtPerc(s.perc) : '—'}</div>
-            <div class="prog-label">${s.label}</div>
-        </div>`;
-    }).join('');
+    const parts = d.affluenza.snapshots
+        .filter(s => s.votanti > 0)
+        .map(s => `${s.label}\u00a0\u2192\u00a0${fmtPerc(s.perc)}`);
+    progEl.textContent = parts.join('  |\u00a0\u00a0');
 
     // Results
     if (d.has_results) {
@@ -129,6 +123,14 @@ function updateSummaryPanel() {
         document.getElementById('risultati-available').style.display = 'none';
         document.getElementById('risultati-unavailable').style.display = '';
     }
+
+    // Last update timestamp
+    const now = new Date();
+    const ts = now.toLocaleString('it-IT', {
+        day: 'numeric', month: 'long', year: 'numeric',
+        hour: '2-digit', minute: '2-digit'
+    });
+    document.getElementById('last-update').textContent = 'Ultimo aggiornamento: ' + ts;
 }
 
 // ---------------------------------------------------------------------------
@@ -138,25 +140,19 @@ function updateSummaryPanel() {
 function setMode(mode) {
     currentMode = mode;
 
-    // Update buttons
     document.getElementById('btn-affluenza').classList.toggle('active', mode === 'affluenza');
     document.getElementById('btn-risultati').classList.toggle('active', mode === 'risultati');
 
-    // Toggle summary content
     document.getElementById('summary-affluenza').style.display = mode === 'affluenza' ? '' : 'none';
     document.getElementById('summary-risultati').style.display = mode === 'risultati' ? '' : 'none';
 
-    // Update map
     if (geojsonLayer) {
         geojsonLayer.setStyle(styleFeature);
     }
     updateLegend();
-
-    // Update table
     buildRegionsTable();
 }
 
-// Make setMode available globally for onclick
 window.setMode = setMode;
 
 // ---------------------------------------------------------------------------
@@ -211,13 +207,12 @@ function onEachFeature(feature, layer) {
         click: function(e) {
             const p = feature.properties;
             let html = `<div class="popup-title">${p.comune}</div>`;
-            html += `<div class="popup-subtitle">${p.provincia || ''} — ${p.regione || ''}</div>`;
+            html += `<div class="popup-subtitle">${p.provincia || ''} \u2014 ${p.regione || ''}</div>`;
 
             if (p.elettori) {
                 html += `<div class="popup-row"><span>Elettori</span><span class="popup-val">${fmtNum(p.elettori)}</span></div>`;
             }
 
-            // Affluence snapshots
             html += `<div class="popup-section"><div class="popup-section-title">Affluenza</div>`;
             const labels = ['12:00', '19:00', '23:00', 'Finale'];
             for (let i = 1; i <= 4; i++) {
@@ -229,7 +224,6 @@ function onEachFeature(feature, layer) {
             }
             html += '</div>';
 
-            // Results
             if (p.perc_si != null) {
                 html += `<div class="popup-section"><div class="popup-section-title">Risultati</div>`;
                 html += `<div class="popup-row"><span>S\u00ec</span><span class="popup-val" style="color:var(--color-si)">${fmtPerc(p.perc_si)} (${fmtNum(p.si)})</span></div>`;
@@ -264,7 +258,7 @@ async function loadMap() {
     } catch (e) {
         console.error('Failed to load GeoJSON:', e);
         document.getElementById('map').innerHTML =
-            '<p style="text-align:center;padding:3rem;color:#666;">GeoJSON non disponibile. Eseguire prepare_site.py per generarlo.</p>';
+            '<p style="padding:3rem;color:#666;">GeoJSON non disponibile.</p>';
     }
 }
 
@@ -294,6 +288,16 @@ function updateLegend() {
 // ---------------------------------------------------------------------------
 // Regions table
 // ---------------------------------------------------------------------------
+
+// Map column keys to their bar color CSS variable
+const BAR_COLORS = {
+    best_perc: 'var(--color-turnout-light)',
+    perc_12: 'var(--color-turnout-light)',
+    perc_19: 'var(--color-turnout-light)',
+    perc_23: 'var(--color-turnout-light)',
+    perc_si: 'var(--color-si-light)',
+    perc_no: 'var(--color-no-light)',
+};
 
 function buildRegionsTable() {
     if (!regionsData) return;
@@ -330,23 +334,20 @@ function buildRegionsTable() {
     ).join('');
 
     // Flatten data for table
-    let rows = regionsData.map(r => {
-        const flat = {
-            regione: r.regione,
-            elettori: r.elettori,
-            best_votanti: r.affluenza.best_votanti,
-            best_perc: r.affluenza.best_perc,
-            perc_12: r.affluenza.snapshots[0].perc,
-            perc_19: r.affluenza.snapshots[1].perc,
-            perc_23: r.affluenza.snapshots[2].perc,
-            perc_si: r.results.perc_si,
-            perc_no: r.results.perc_no,
-            si: r.results.si,
-            no: r.results.no,
-            validi: r.results.validi,
-        };
-        return flat;
-    });
+    let rows = regionsData.map(r => ({
+        regione: r.regione,
+        elettori: r.elettori,
+        best_votanti: r.affluenza.best_votanti,
+        best_perc: r.affluenza.best_perc,
+        perc_12: r.affluenza.snapshots[0].perc,
+        perc_19: r.affluenza.snapshots[1].perc,
+        perc_23: r.affluenza.snapshots[2].perc,
+        perc_si: r.results.perc_si,
+        perc_no: r.results.perc_no,
+        si: r.results.si,
+        no: r.results.no,
+        validi: r.results.validi,
+    }));
 
     // Sort
     if (sortCol) {
@@ -359,10 +360,16 @@ function buildRegionsTable() {
         });
     }
 
-    // Build body
+    // Build body with inline data bars
     tbody.innerHTML = rows.map(r =>
         '<tr>' + columns.map(c => {
             const val = r[c.key];
+            const barColor = BAR_COLORS[c.key];
+            if (barColor && val != null && !isNaN(val)) {
+                // Percentage columns: bar width = value clamped to 100
+                const w = Math.min(val, 100);
+                return `<td class="cell-bar" style="--bar-width:${w}%;--bar-color:${barColor}"><span>${c.fmt(val)}</span></td>`;
+            }
             return `<td>${c.fmt(val)}</td>`;
         }).join('') + '</tr>'
     ).join('');
@@ -373,7 +380,7 @@ function sortTable(col) {
         sortAsc = !sortAsc;
     } else {
         sortCol = col;
-        sortAsc = col === 'regione'; // ascending for text, descending for numbers
+        sortAsc = col === 'regione';
     }
     buildRegionsTable();
 }
