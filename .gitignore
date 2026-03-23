@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+*.egg-info/
+
+# Data pipeline intermediates
+output/raw/
+output/scrape_summary.json
+boundaries/
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.zip
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Environment
+.env
